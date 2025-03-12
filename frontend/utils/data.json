@@ -1,0 +1,96 @@
+{
+  "header": {
+    "img": "/images/header_parco_biblioteca.jpg",
+    "title": "Un parco in biblioteca",
+    "subtitle": "Percorso partecipativo per ripensare insieme e valorizzare funzioni e spazi della biblioteca Alda Merini e del parco Salvemini"
+  },
+  "about": {
+    "img": "/images/parco_In_biblioteca_1.jpg",
+    "title": "Un parco in biblioteca? Cioè?",
+    "content": [
+      "<p>La <strong>biblioteca Alda Merini</strong> e il <strong>parco Salvemini</strong> sono due spazi molto amati a Rivoli, bellissimi e con un enorme potenziale nascosto.</p>",
+      "<p>Se provassimo a immaginare l'uno come l'estensione dell’altro, a ripensare la biblioteca ed il parco come un unico spazio, allora potremmo creare un luogo fantastico dove poter stare bene insieme con gli altri, immersi nella cultura, nella natura, nelle relazioni.</p>",
+      "<p>Ecco perché questo titolo. Un posto così, però, bisogna <strong>pensarlo tutti insieme!</strong></p>"]
+  },
+  "why": {
+    "img": "/images/biblioteca_rivoli.jpg",
+    "title": "Perché un percorso partecipativo?",
+    "content": [
+      "<p>Un luogo così bisogna <strong>immaginarlo congiuntamente</strong> e un percorso partecipativo è lo strumento più adatto per farlo perché chiama a raccolta tutti coloro che sono, o possono essere interessati.</p>",
+      "<p>Mettendo in circolo <strong>competenze, energie, esigenze,</strong> riflessioni di tutti, possiamo riuscire a far emergere una visione nuova e innovativa di questo angolo della nostra città; progettarne funzioni e usi che rispondano ai bisogni della comunità, attivando il <strong>protagonismo individuale e collettivo.</strong></p>"
+    ]
+  },
+  "principles": {
+    "title": "Su quali principi si basa?",
+    "note": "Sono previsti momenti formativi per approfondire questi aspetti della democrazia partecipativa.",
+    "content": [
+      "Ascolto reciproco",
+      "Individuazione dei bisogni",
+      "Stimolo all'immaginario collettivo",
+      "Co-progettazione creativa e collaborativa"
+    ]
+  },
+  "how_it_works": {
+    "img": "/images/parco_rivoli.jpg",
+    "title": "Come funziona?",
+    "content": [
+      "<p>“C'è un parco in biblioteca” è un percorso con tappe e incontri successivi, ciascuno con obiettivi specifici:</p>",
+      "<ul><li>Ascoltare e comprendere i bisogni</li><li>Elaborare una visione condivisa</li><li>Raccogliere proposte</li><li>Definire un piano concreto</li></ul>",
+      "<p><strong>Abbiamo predisposto una mappa del percorso con date, laboratori e luoghi: è importante che ciascuno sappia a che punto siamo e dove stiamo andando, INSIEME.</strong></p>"
+    ]
+  },
+  "when": {
+    "title": "Quando si svolge?",
+    "note": "Tre mesi di incontri, laboratori, interviste e dibattiti per elaborare proposte su funzioni e progettualità, e ripensare gli spazi fisici di biblioteca e parco per accogliere queste nuove visioni. Gli incontri si terranno presso la <strong>biblioteca Alda Merini e il parco Salvemini</strong>.",
+    "dates": [
+      {
+        "date": "26.03",
+        "time": "ore 18:30",
+        "type": "LANCIO"
+      },
+      {
+        "date": "7.04",
+        "time": "dalle ore 18 alle ore 20",
+        "type": "FORMAZIONE"
+      },
+      {
+        "date": "16.04",
+        "time": "ore 20:30",
+        "type": "LABORATORIO VISIONING"
+      },
+      {
+        "date": "5.05",
+        "time": "ore 20:30",
+        "type": "APPROFONDIMENTO"
+      },
+      {
+        "date": "12.05",
+        "time": "dalle ore 18 alle ore 20",
+        "type": "FORMAZIONE"
+      },
+      {
+        "date": "24.05",
+        "time": "dalle ore 10:30 alle ore 17",
+        "type": ""
+      },
+      {
+        "date": "14.06",
+        "time": "dalle ore 14:30 alle ore 19",
+        "type": "ACTION PLANNING"
+      },
+      {
+        "date": "30.06",
+        "time": "ore 20:30",
+        "type": "ESITI"
+      }
+    ]
+  },
+  "join": {
+    "img": "/images/libri_biblioteca_rivoli.jpg",
+    "title": "Come partecipare?",
+    "content": [
+      "Partecipare è semplice! <strong>Vieni agli eventi in calendario</strong> e condividi il tuo punto di vista e magari … porta un amico.",
+      "<strong>Unisciti a noi e contribuisci a creare un nuovo spazio per la comunità!</strong>"
+    ]
+  }
+}

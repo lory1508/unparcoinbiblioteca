@@ -9,7 +9,16 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "biblioteca-green": "#97bf45",
+        "biblioteca-red": "#ec6a0d",
+        "biblioteca-blue": "#00adb5",
+        "biblioteca-purple": "#b73386",
+        "biblioteca-yellow": "#f9ba00",
+        "foreground": "#3c3c3b"
+      }
+    },
   },
   plugins: [],
 }
