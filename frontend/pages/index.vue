@@ -7,6 +7,7 @@
         <div class="md:text-4xl text-lg text-center max-w-4xl font-light">{{ data.header.subtitle }}</div>
       </div>
     </div>
+    <NuxtImg :src="data.header.img" />
     <Divider />
 
     <!-- About -->
