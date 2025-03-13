@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   // image: {
   //   provider: 'static'
   // },
+  nitro: {
+    preset: 'static',
+    // output: {
+    //   dir: '.nuxt/dist',
+    // },
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
