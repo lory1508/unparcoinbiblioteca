@@ -7,10 +7,22 @@
       <Divider />
     </div>
     <slot />
+
+    <!-- Footer -->
+    <div class="bg-[#1d1d1b] flex flex-row gap-16 py-16 pl-32">
+      <NuxtImg :src="`${url}images/Logo_Ascolto_Attivo_bianco.png`" alt="Un Parco In Biblioteca - Logo" />
+      <div class="flex flex-col text-white">
+        <div class="font-black">{{ data.footer.title }}</div>
+        <div>{{ data.footer.address }}</div>
+        <a :href="`mailto:${data.footer.email}`">{{ data.footer.email }}</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import data from '@/utils/data.json'
+
 const config = useRuntimeConfig()
 
 const url = config.environment

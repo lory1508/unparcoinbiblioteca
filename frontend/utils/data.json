@@ -5,7 +5,7 @@
     "subtitle": "Percorso partecipativo per ripensare insieme e valorizzare funzioni e spazi della biblioteca Alda Merini e del parco Salvemini"
   },
   "about": {
-    "img": "/images/parco_In_biblioteca_1.jpg",
+    "img": "/images/parco_In_biblioteca_1_cropped.jpg",
     "title": "Un parco in biblioteca? Cioè?",
     "content": [
       "<p>La <strong>biblioteca Alda Merini</strong> e il <strong>parco Salvemini</strong> sono due spazi molto amati a Rivoli, bellissimi e con un enorme potenziale nascosto.</p>",
@@ -100,5 +100,10 @@
       "Partecipare è semplice! <strong>Vieni agli eventi in calendario</strong> e condividi il tuo punto di vista e magari … porta un amico.",
       "<strong>Unisciti a noi e contribuisci a creare un nuovo spazio per la comunità!</strong>"
     ]
+  },
+  "footer": {
+    "title":"Biblioteca Alda Merini",
+    "address": "Corso Susa, 130 - 10098 Rivoli",
+    "email": "unparcoinbiblioteca@comune.rivoli.to.it"
   }
 }
