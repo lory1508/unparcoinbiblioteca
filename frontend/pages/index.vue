@@ -28,15 +28,23 @@
 
     <!-- Why -->
     <div class="flex flex-col justify-center gap-16 px-6 md:flex-row md:px-32">
-      <div class="flex flex-col w-full gap-6 p-8 transition-all duration-300 bg-white border shadow-2xl hover:scale-105 rounded-3xl border-zinc-200 md:w-2/3 md:max-w-xl">
-        <div class="w-full text-2xl tracking-tight md:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
-        <div 
-          v-for="(why, index) in data.why.content"
-          :key="`why-${index}`"
-          class="flex flex-col gap-4"
-        >
-          <span v-html="why" />
+      <div class="flex flex-col w-full transition-all duration-300 hover:scale-105 md:w-2/3 md:max-w-xl">
+        <div class="flex flex-col w-full gap-6 p-8 bg-white border rounded-br-none shadow-2xl rounded-3xl border-zinc-200 ">
+          <div class="w-full text-2xl tracking-tight md:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
+          <div 
+            v-for="(why, index) in data.why.content"
+            :key="`why-${index}`"
+            class="flex flex-col gap-4"
+          >
+            <span v-html="why" />
+          </div>
         </div>
+        <div class="self-end inline-block w-12 -mt-1 overflow-hidden">
+          <div class="h-16 origin-top-left transform -rotate-45 bg-white border border-zinc-200 "></div>
+        </div>
+        <!-- <div 
+          class="self-end w-12 h-12 -mt-1 origin-bottom-left transform rotate-45 bg-white border border-t-0 shadow-2xl border-zinc-200"
+        /> -->
       </div>
       <div class="w-full md:w-1/3">
         <NuxtImg :src="`${url}${data.why.img}`" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
@@ -47,14 +55,16 @@
   <!-- Principles -->
   <div class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32">
     <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.principles.title }}</div>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <div class="flex flex-col gap-4 md:flex-row">
       <div 
         v-for="(p, index) in data.principles.content" 
         :key="`principle-${index}`"
-        class="flex items-center justify-center px-8 py-4 text-xl text-center uppercase transition-all duration-300 rounded-full custom-title-font text-wrap hover:scale-105"
+        class="flex items-center justify-center px-8 py-4 text-xl text-center uppercase transition-all duration-300 rounded-full w-fit custom-title-font hover:scale-105"
         :class="`bg-biblioteca-${principleBg(index)} text-white text-lg font-bold`"
       >
-        {{ p }}
+        <div class="w-full">
+          {{ p }}
+        </div>
       </div>
     </div>
     <div class="text-lg">{{ data.principles.note }}</div>
