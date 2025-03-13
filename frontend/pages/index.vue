@@ -99,6 +99,19 @@
       <NuxtImg :src="`${url}${data.join.img}`" alt="Un parco in biblioteca" class="w-full md:w-1/3 md:-mt-20" />
     </div>
   </div>
+
+  <!-- Map -->
+  <div>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5633.614874379829!2d7.5143006769038365!3d45.07699177107035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478840269ed9ebdb%3A0x104f16be184291f!2sBiblioteca%20Civica%20%22Alda%20Merini%22%20Rivoli!5e0!3m2!1sit!2sit!4v1741866033192!5m2!1sit!2sit" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+    />
+  </div>
 </template>
 
 <script setup>
