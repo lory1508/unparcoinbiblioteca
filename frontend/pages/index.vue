@@ -51,7 +51,7 @@
       <div 
         v-for="(p, index) in data.principles.content" 
         :key="`principle-${index}`"
-        class="flex items-center justify-center px-8 py-4 text-xl text-center uppercase rounded-full custom-title-font text-wrap"
+        class="flex items-center justify-center px-8 py-4 text-xl text-center uppercase transition-all duration-300 rounded-full custom-title-font text-wrap hover:scale-105"
         :class="`bg-biblioteca-${principleBg(index)} text-white text-lg font-bold`"
       >
         {{ p }}
@@ -61,14 +61,14 @@
   </div>
 
   <!-- How it works -->
-  <div class="flex flex-col w-full pt-8 mb-96">
+  <div class="flex flex-col w-full pt-8">
     <div 
       class="w-full h-[500px]"
       :style="`background-position: center; background-size: cover; background-image: url('${url}${data.how_it_works.img}'); background-attachment: fixed;`"
     />
     <div class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red">  
       <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
-      <div class="justify-center px-32 text-center">
+      <div class="justify-center px-6 text-center md:px-32">
         <div v-for="(how, index) in data.how_it_works.content" :key="`how-${index}`" class="flex flex-col gap-4 text-start">
           <span v-html="how" />
         </div>
@@ -77,17 +77,26 @@
   </div>
 
   <!-- When -->
+  <div class="flex flex-col items-center justify-center gap-16 px-6 py-16 md:px-32">
+    <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.when.title }}</div>
+    <div class="flex flex-col gap-8 md:flex-row md:gap-0">
+      <div v-for="(date, index) in data.when.dates" :key="`when-${index}`">
+        <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="index%2" />
+      </div>
+    </div>
+    <div class="text-lg" v-html="data.when.note" />
+  </div>
 
   <!-- Join -->
   <div class="flex flex-col">
-    <div class="px-32 pb-2 text-2xl tracking-tight md:text-4xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
-    <div class="flex flex-row gap-12 px-32 py-8 text-white bg-biblioteca-blue">
-      <div class="flex flex-col w-2/3 gap-8">
+    <div class="px-6 pb-2 text-2xl tracking-tight md:px-32 md:text-4xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
+    <div class="flex flex-col gap-12 px-6 py-8 text-white md:px-32 md:flex-row bg-biblioteca-blue">
+      <div class="flex flex-col w-full gap-8 md:w-2/3">
         <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start">
-          <span v-html="how" />
+          <div v-html="how" />
         </div>
       </div>
-      <NuxtImg :src="`${url}${data.join.img}`" alt="Un parco in biblioteca" class="w-1/3 -mt-20" />
+      <NuxtImg :src="`${url}${data.join.img}`" alt="Un parco in biblioteca" class="w-full md:w-1/3 md:-mt-20" />
     </div>
   </div>
 </template>

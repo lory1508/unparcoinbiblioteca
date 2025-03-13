@@ -46,42 +46,50 @@
       {
         "date": "26.03",
         "time": "ore 18:30",
-        "type": "LANCIO"
+        "type": "LANCIO",
+        "color": "green"
       },
       {
         "date": "7.04",
         "time": "dalle ore 18 alle ore 20",
-        "type": "FORMAZIONE"
+        "type": "FORMAZIONE",
+        "color": "red"
       },
       {
         "date": "16.04",
         "time": "ore 20:30",
-        "type": "LABORATORIO VISIONING"
+        "type": "LABORATORIO VISIONING",
+        "color": "blue"
       },
       {
         "date": "5.05",
         "time": "ore 20:30",
-        "type": "APPROFONDIMENTO"
+        "type": "APPROFONDIMENTO",
+        "color": "purple"
       },
       {
         "date": "12.05",
         "time": "dalle ore 18 alle ore 20",
-        "type": "FORMAZIONE"
+        "type": "FORMAZIONE",
+        "color": "yellow"
       },
       {
         "date": "24.05",
         "time": "dalle ore 10:30 alle ore 17",
-        "type": ""
+        "type": "CHARETTE",
+        "color": "blue"
       },
       {
         "date": "14.06",
         "time": "dalle ore 14:30 alle ore 19",
-        "type": "ACTION PLANNING"
+        "type": "ACTION PLANNING",
+        "color": "green"
       },
       {
         "date": "30.06",
         "time": "ore 20:30",
-        "type": "ESITI"
+        "type": "ESITI",
+        "color": "red"
       }
     ]
   },
