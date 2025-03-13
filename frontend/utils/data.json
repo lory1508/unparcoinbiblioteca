@@ -1,6 +1,6 @@
 {
   "header": {
-    "img": "~/assets/header_parco_biblioteca.jpg",
+    "img": "/images/header_parco_biblioteca.jpg",
     "title": "Un parco in biblioteca",
     "subtitle": "Percorso partecipativo per ripensare insieme e valorizzare funzioni e spazi della biblioteca Alda Merini e del parco Salvemini"
   },
