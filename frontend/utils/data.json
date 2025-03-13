@@ -31,7 +31,7 @@
     ]
   },
   "how_it_works": {
-    "img": "/images/parco_rivoli.jpg",
+    "img": "images/parco_rivoli.jpg",
     "title": "Come funziona?",
     "content": [
       "<p>“C'è un parco in biblioteca” è un percorso con tappe e incontri successivi, ciascuno con obiettivi specifici:</p>",

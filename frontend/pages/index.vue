@@ -63,8 +63,8 @@
   <!-- How it works -->
   <div class="flex flex-col w-full pt-8 mb-96">
     <div 
-      class="w-full h-[500px] bg-no-repeat bg-cover bg-center"
-      :style="`background-image: url('${url}${data.how_it_works.img}')`"
+      class="w-full h-[500px]"
+      :style="`background-position: center; background-size: cover; background-image: url('${url}${data.how_it_works.img}'); background-attachment: fixed;`"
     />
     <div class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red">  
       <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
