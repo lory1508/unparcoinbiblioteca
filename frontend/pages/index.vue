@@ -16,7 +16,7 @@
     <!-- About -->
     <div class="flex flex-col gap-16 px-8 py-24 md:flex-row md:px-16 md:gap-0">
       <div class="w-full md:w-1/3 md:pr-16">
-        <NuxtImg :src="`${url}/images/parco_In_biblioteca_1.jpg`" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
+        <NuxtImg :src="`${url}${data.about.img}`" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
       </div>
       <div class="flex flex-col w-full gap-6 md:w-2/3 text-foreground">
         <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.about.title }}</div>
