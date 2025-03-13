@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-// const url = useRequestURL()
 const config = useRuntimeConfig()
 
 const url = config.environment

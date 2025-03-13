@@ -1,20 +1,20 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div :class="`h-screen bg-pink-400 bg-no-repeat bg-cover`" >
-    <!-- <div :class="`h-screen bg-[url('${data.header.img}')] bg-no-repeat bg-cover`" > -->
+    <!-- <div :class="`h-screen bg-pink-400 bg-no-repeat bg-cover`" > -->
+    <div :class="`h-screen bg-[url('${url}${data.header.img}')] bg-no-repeat bg-cover`" >
       <div class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55">
         <div class="text-4xl font-bold tracking-tight text-center md:text-6xl custom-title-font">{{ data.header.title }}</div>
         <div class="max-w-4xl text-lg font-light text-center md:text-4xl">{{ data.header.subtitle }}</div>
       </div>
     </div>
-    <!-- <NuxtImg :src="data.header.img" /> -->
+    <NuxtImg :src="`${url}${data.header.img}`" />
     <Divider />
 
     <!-- About -->
     <div class="flex flex-col gap-16 px-8 py-24 md:flex-row md:px-16 md:gap-0">
       <div class="w-full md:w-1/3 md:pr-16">
-        <!-- <NuxtImg src="/images/parco_In_biblioteca_1.jpg" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" /> -->
+        <NuxtImg :src="`${url}/images/parco_In_biblioteca_1.jpg`" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
       </div>
       <div class="flex flex-col w-full gap-6 md:w-2/3 text-foreground">
         <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.about.title }}</div>
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="w-full md:w-1/3">
-        <!-- <NuxtImg :src="data.why.img" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" /> -->
+        <NuxtImg :src="`${url}${data.why.img}`" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
       </div>
     </div>
   </div>
@@ -62,8 +62,8 @@
   <div class="flex flex-col w-full pt-8 mb-96">
     <div 
       class="w-full h-[500px] bg-no-repeat bg-cover bg-center"
+      :style="`background-image: url('${url}${data.how_it_works.img}')`"
     />
-      <!-- :style="`background-image: url('${data.how_it_works.img}')`" -->
     <div class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red">  
       <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
       <div class="justify-center px-32 text-center">
@@ -85,7 +85,7 @@
           <span v-html="how" />
         </div>
       </div>
-      <!-- <NuxtImg :src="data.join.img" alt="Un parco in biblioteca" class="w-1/3 -mt-20" /> -->
+      <NuxtImg :src="`${url}${data.join.img}`" alt="Un parco in biblioteca" class="w-1/3 -mt-20" />
     </div>
   </div>
 </template>
@@ -93,6 +93,8 @@
 <script setup>
 import data from '@/utils/data.json'
 
+const config = useRuntimeConfig()
+const url = config.environment
 const principleBgs = ["green", "red", "blue", "purple"]
 
 const principleBg = (index) => {
