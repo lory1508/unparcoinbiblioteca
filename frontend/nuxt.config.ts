@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', '@nuxt/fonts'],
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon'],
   fonts: {
     openDyslexic: {
       weights: [400, 600],
