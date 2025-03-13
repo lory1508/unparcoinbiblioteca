@@ -2,7 +2,7 @@
   "header": {
     "img": "images/header_parco_biblioteca.jpg",
     "title": "Un parco in biblioteca",
-    "subtitle": "Percorso partecipativo per ripensare insieme e valorizzare funzioni e spazi del Parco Salvemini e della Biblioteca Alda Merini"
+    "subtitle": "Percorso partecipativo per ripensare insieme<br/>e valorizzare funzioni e spazi del<br/>Parco Salvemini e della Biblioteca Alda Merini"
   },
   "about": {
     "img": "/images/parco_In_biblioteca_1_cropped.jpg",
@@ -97,7 +97,8 @@
     "img": "/images/libri_biblioteca_rivoli.jpg",
     "title": "Come partecipare?",
     "content": [
-      "Partecipare è semplice! <strong>Vieni agli eventi in calendario</strong> e condividi il tuo punto di vista e magari … porta un amico.",
+      "Partecipare è semplice!",
+      "<strong>Vieni agli eventi in calendario</strong> e condividi il tuo punto di vista e magari… porta un amico.",
       "<strong>Unisciti a noi e contribuisci a creare un nuovo spazio per la comunità!</strong>"
     ]
   },

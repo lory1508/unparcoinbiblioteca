@@ -8,7 +8,10 @@
     >
       <div class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55">
         <div class="text-4xl font-bold tracking-tight text-center md:text-6xl custom-title-font">{{ data.header.title }}</div>
-        <div class="max-w-4xl text-lg font-light text-center md:text-4xl">{{ data.header.subtitle }}</div>
+        <div 
+          class="max-w-4xl text-lg font-light text-center md:text-4xl"
+          v-html="data.header.subtitle"
+        />
       </div>
     </div>
     <Divider />
@@ -99,10 +102,10 @@
 
   <!-- Join -->
   <div class="flex flex-col">
-    <div class="px-6 pb-2 text-2xl tracking-tight md:px-32 md:text-4xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
+    <div class="px-6 pb-2 text-3xl tracking-tight md:px-32 md:text-5xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
     <div class="flex flex-col gap-12 px-6 py-8 text-white md:px-32 md:flex-row bg-biblioteca-blue">
-      <div class="flex flex-col w-full gap-8 md:w-2/3">
-        <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start">
+      <div class="flex flex-col w-full gap-4 md:w-2/3">
+        <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start first:md:text-3xl first:text-2xl first:font-bold">
           <div v-html="how" />
         </div>
       </div>
