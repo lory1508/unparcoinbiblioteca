@@ -5,15 +5,16 @@
     <!-- <div class="sticky top-0 flex flex-col w-full bg-white bg-opacity-50" > -->
       <img :src="`${url}logo.png`" alt="Un Parco In Biblioteca - Logo" width="215" height="70" class="my-6 ml-16" />
       <Divider />
-      <pre>{{ url }}</pre>
     </div>
     <slot />
   </div>
 </template>
 
 <script setup>
-const route = useRoute()
-const url = useRequestURL()
+// const url = useRequestURL()
+const config = useRuntimeConfig()
+
+const url = config.environment
 
 </script>
 

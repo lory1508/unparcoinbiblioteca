@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   // image: {
   //   provider: 'static'
   // },
+  runtimeConfig: {
+    environment: process.env.ENVIRONMENT || 'development',
+  },
+
   nitro: {
     preset: 'static',
     // output: {
