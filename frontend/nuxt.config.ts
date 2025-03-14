@@ -2,18 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  // image: {
-  //   provider: 'static'
-  // },
   runtimeConfig: {
-    environment: process.env.ENVIRONMENT || 'development',
+    public: {
+      environment: process.env.ENVIRONMENT || 'development',
+    }
   },
 
   nitro: {
     preset: 'static',
-    // output: {
-    //   dir: '.nuxt/dist',
-    // },
   },
   css: ['~/assets/css/main.css'],
   postcss: {

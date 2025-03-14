@@ -25,7 +25,7 @@ import data from '@/utils/data.json'
 
 const config = useRuntimeConfig()
 
-const url = config.environment
+const url = config.public.environment
 
 </script>
 

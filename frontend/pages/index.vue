@@ -91,7 +91,7 @@
     <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.when.title }}</div>
     <div class="flex flex-wrap justify-center w-full gap-32 2xl:flex-row 2xl:gap-0">
       <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="w-fit">
-        <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="index%2" />
+        <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="Boolean(index%2)" />
       </div>
     </div>
     <div class="text-xl" v-html="data.when.note" />
@@ -128,7 +128,7 @@
 import data from '@/utils/data.json'
 
 const config = useRuntimeConfig()
-const url = config.environment
+const url = config.public.environment
 const principleBgs = ["green", "red", "blue", "purple"]
 
 const principleBg = (index) => {
