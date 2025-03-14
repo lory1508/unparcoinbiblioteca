@@ -9,7 +9,7 @@
     <slot />
 
     <!-- Footer -->
-    <div class="bg-[#1d1d1b] flex flex-col md:flex-row md:gap-16 gap-8 py-8 items-center  md:pl-32">
+    <div class="bg-[#1d1d1b] flex flex-col lg:flex-row lg:gap-16 gap-8 py-8 items-center  lg:pl-32">
       <img :src="data.footer.logo" alt="Un Parco In Biblioteca - Logo" width="280" />
       <div class="flex flex-col text-white">
         <div class="font-black">{{ data.footer.title }}</div>

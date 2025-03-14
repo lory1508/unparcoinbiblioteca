@@ -30,10 +30,10 @@
     </div>
 
     <!-- Why -->
-    <div class="flex flex-col justify-center gap-16 px-6 md:flex-row md:px-32">
-      <div class="flex flex-col w-full transition-all duration-300 hover:scale-105 md:w-2/3 md:max-w-xl">
+    <div class="flex flex-col justify-center gap-16 px-6 lg:flex-row md:px-32">
+      <div class="flex flex-col w-full transition-all duration-300 hover:scale-105 lg:w-2/3 lg:max-w-xl">
         <div class="flex flex-col w-full gap-6 p-8 bg-white border rounded-br-none shadow-2xl rounded-3xl border-zinc-200 ">
-          <div class="w-full text-2xl tracking-tighter uppercase md:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
+          <div class="w-full text-2xl tracking-tighter uppercase lg:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
           <div 
             v-for="(why, index) in data.why.content"
             :key="`why-${index}`"
@@ -46,7 +46,7 @@
           <div class="h-16 origin-top-left transform -rotate-45 bg-white border border-zinc-200 "></div>
         </div>
       </div>
-      <div class="w-full md:w-1/3">
+      <div class="w-full lg:w-1/3">
         <img :src="data.why.img" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
       </div>
     </div>
@@ -99,14 +99,14 @@
 
   <!-- Join -->
   <div class="flex flex-col">
-    <div class="px-6 pb-2 text-3xl tracking-tighter uppercase md:px-32 md:text-5xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
-    <div class="flex flex-col gap-12 px-6 py-8 text-white md:px-32 md:flex-row bg-biblioteca-blue">
-      <div class="flex flex-col w-full gap-4 md:w-2/3">
-        <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start first:md:text-3xl first:text-2xl first:font-bold">
+    <div class="px-6 pb-2 text-3xl tracking-tighter uppercase xl:px-32 xl:text-5xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
+    <div class="flex flex-col gap-12 px-6 py-8 text-white xl:px-32 xl:flex-row bg-biblioteca-blue">
+      <div class="flex flex-col w-full gap-4 xl:w-2/3">
+        <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start first:xl:text-3xl first:text-2xl first:font-bold">
           <div v-html="how" />
         </div>
       </div>
-      <img :src="data.join.img" alt="Un parco in biblioteca" class="w-full md:w-1/3 md:-mt-20" />
+      <img :src="data.join.img" alt="Un parco in biblioteca" class="w-full xl:w-1/3 xl:-mt-20" />
     </div>
   </div>
 
