@@ -7,7 +7,7 @@
       style="background-position: center; background-size: cover; background-image: url('https://unparcoinbiblioteca.netlify.app/images/header_parco_biblioteca.jpg'); background-attachment: fixed;"
     >
       <div class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55">
-        <div class="text-4xl font-bold tracking-tight text-center md:text-6xl custom-title-font">{{ data.header.title }}</div>
+        <div class="text-4xl font-bold tracking-tighter text-center uppercase md:text-6xl custom-title-font">{{ data.header.title }}</div>
         <div 
           class="max-w-4xl text-lg font-light text-center md:text-4xl"
           v-html="data.header.subtitle"
@@ -22,7 +22,7 @@
         <NuxtImg :src="`${url}${data.about.img}`" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
       </div>
       <div class="flex flex-col w-full gap-6 md:w-2/3 text-foreground">
-        <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.about.title }}</div>
+        <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.about.title }}</div>
         <div v-for="(item, index) in data.about.content" :key="`about-${index}`" class="flex flex-col">
           <span v-html="item" />
         </div>
@@ -33,7 +33,7 @@
     <div class="flex flex-col justify-center gap-16 px-6 md:flex-row md:px-32">
       <div class="flex flex-col w-full transition-all duration-300 hover:scale-105 md:w-2/3 md:max-w-xl">
         <div class="flex flex-col w-full gap-6 p-8 bg-white border rounded-br-none shadow-2xl rounded-3xl border-zinc-200 ">
-          <div class="w-full text-2xl tracking-tight md:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
+          <div class="w-full text-2xl tracking-tighter uppercase md:text-4xl custom-title-font text-wrap">{{ data.why.title }}</div>
           <div 
             v-for="(why, index) in data.why.content"
             :key="`why-${index}`"
@@ -45,9 +45,6 @@
         <div class="self-end inline-block w-12 -mt-1 overflow-hidden">
           <div class="h-16 origin-top-left transform -rotate-45 bg-white border border-zinc-200 "></div>
         </div>
-        <!-- <div 
-          class="self-end w-12 h-12 -mt-1 origin-bottom-left transform rotate-45 bg-white border border-t-0 shadow-2xl border-zinc-200"
-        /> -->
       </div>
       <div class="w-full md:w-1/3">
         <NuxtImg :src="`${url}${data.why.img}`" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
@@ -57,17 +54,15 @@
 
   <!-- Principles -->
   <div class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32">
-    <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.principles.title }}</div>
-    <div class="flex flex-col gap-4 md:flex-row">
+    <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.principles.title }}</div>
+    <div class="flex flex-wrap justify-center w-full gap-4">
       <div 
         v-for="(p, index) in data.principles.content" 
         :key="`principle-${index}`"
-        class="flex items-center justify-center px-8 py-4 text-xl text-center uppercase transition-all duration-300 rounded-full w-fit custom-title-font hover:scale-105"
-        :class="`bg-biblioteca-${principleBg(index)} text-white text-lg font-bold`"
+        class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-80 w-80 size-fit custom-title-font hover:scale-105"
+        :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('${url}${p.img}');`"
       >
-        <div class="w-full">
-          {{ p }}
-        </div>
+        {{ p.text }}
       </div>
     </div>
     <div class="text-lg">{{ data.principles.note }}</div>
@@ -80,7 +75,7 @@
       :style="`background-position: center; background-size: cover; background-image: url('${url}${data.how_it_works.img}'); background-attachment: fixed;`"
     />
     <div class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red">  
-      <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
+      <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
       <div class="justify-center px-6 text-center md:px-32">
         <div v-for="(how, index) in data.how_it_works.content" :key="`how-${index}`" class="flex flex-col gap-4 text-start">
           <span v-html="how" />
@@ -91,7 +86,7 @@
 
   <!-- When -->
   <div class="flex flex-col items-center justify-center gap-16 px-6 py-16 md:px-16">
-    <div class="text-2xl tracking-tight md:text-4xl custom-title-font">{{ data.when.title }}</div>
+    <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.when.title }}</div>
     <div class="flex flex-wrap justify-center w-full gap-32 2xl:flex-row 2xl:gap-0">
       <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="w-fit">
         <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="index%2" />
@@ -102,7 +97,7 @@
 
   <!-- Join -->
   <div class="flex flex-col">
-    <div class="px-6 pb-2 text-3xl tracking-tight md:px-32 md:text-5xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
+    <div class="px-6 pb-2 text-3xl tracking-tighter uppercase md:px-32 md:text-5xl custom-title-font text-biblioteca-blue">{{ data.join.title }}</div>
     <div class="flex flex-col gap-12 px-6 py-8 text-white md:px-32 md:flex-row bg-biblioteca-blue">
       <div class="flex flex-col w-full gap-4 md:w-2/3">
         <div v-for="(how, index) in data.join.content" :key="`join-${index}`" class="flex flex-col gap-4 text-start first:md:text-3xl first:text-2xl first:font-bold">

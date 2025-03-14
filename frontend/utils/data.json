@@ -5,7 +5,7 @@
     "subtitle": "Percorso partecipativo per ripensare insieme<br/>e valorizzare funzioni e spazi del<br/>Parco Salvemini e della Biblioteca Alda Merini"
   },
   "about": {
-    "img": "/images/parco_In_biblioteca_1_cropped.jpg",
+    "img": "images/parco_In_biblioteca_1_cropped.jpg",
     "title": "Un parco in biblioteca? Cioè?",
     "content": [
       "<p>La <strong>biblioteca Alda Merini</strong> e il <strong>parco Salvemini</strong> sono due spazi molto amati a Rivoli, bellissimi e con un enorme potenziale nascosto.</p>",
@@ -13,7 +13,7 @@
       "<p>Ecco perché questo titolo. Un posto così, però, bisogna <strong>pensarlo tutti insieme!</strong></p>"]
   },
   "why": {
-    "img": "/images/biblioteca_rivoli.jpg",
+    "img": "images/biblioteca_rivoli.jpg",
     "title": "Perché un percorso partecipativo?",
     "content": [
       "<p>Un luogo così bisogna <strong>immaginarlo congiuntamente</strong> e un percorso partecipativo è lo strumento più adatto per farlo perché chiama a raccolta tutti coloro che sono, o possono essere interessati.</p>",
@@ -24,10 +24,22 @@
     "title": "Su quali principi si basa?",
     "note": "Sono previsti momenti formativi per approfondire questi aspetti della democrazia partecipativa.",
     "content": [
-      "Ascolto reciproco",
-      "Individuazione dei bisogni",
-      "Stimolo all'immaginario collettivo",
-      "Co-progettazione creativa e collaborativa"
+      {
+        "text": "Ascolto reciproco",
+        "img": "images/cerchio_parco_in_biblioteca_verde.svg"
+      },
+      {
+        "text": "Individuazione dei bisogni",
+        "img": "images/cerchio_parco_in_biblioteca_Arancio.svg"
+      },
+      {
+        "text": "Stimolo all'immaginario collettivo",
+        "img": "images/cerchio_parco_in_biblioteca_azzurro.svg"
+      },
+      {
+        "text": "Co-progettazione creativa e collaborativa",
+        "img": "images/cerchio_parco_in_biblioteca_viola.svg"
+      }
     ]
   },
   "how_it_works": {
@@ -94,7 +106,7 @@
     ]
   },
   "join": {
-    "img": "/images/libri_biblioteca_rivoli.jpg",
+    "img": "images/libri_biblioteca_rivoli.jpg",
     "title": "Come partecipare?",
     "content": [
       "Partecipare è semplice!",
