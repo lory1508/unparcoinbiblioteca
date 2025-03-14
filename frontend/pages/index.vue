@@ -4,7 +4,7 @@
     <!-- <div :class="`h-screen bg-pink-400 bg-no-repeat bg-cover`" > -->
     <div 
       :class="`h-screen`" 
-      style="background-position: center; background-size: cover; background-image: url('https://unparcoinbiblioteca.netlify.app/images/header_parco_biblioteca.jpg'); background-attachment: fixed;"
+      style="background-position: center; background-size: cover; background-image: url('https://unparcoinbiblioteca.netlify.app/images/header_parco_biblioteca_460.jpg'); background-attachment: fixed;"
     >
       <div class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55">
         <div class="text-4xl font-bold tracking-tighter text-center uppercase md:text-6xl custom-title-font">{{ data.header.title }}</div>
