@@ -1,6 +1,6 @@
 {
   "header": {
-    "img": "images/header_parco_biblioteca.jpg",
+    "img": "images/header_parco_biblioteca_460.jpg",
     "title": "Un parco in biblioteca",
     "subtitle": "Percorso partecipativo per ripensare insieme<br/>e valorizzare funzioni e spazi del<br/>Parco Salvemini e della Biblioteca Alda Merini"
   },
@@ -43,7 +43,7 @@
     ]
   },
   "how_it_works": {
-    "img": "images/parco_rivoli.jpg",
+    "img": "images/parco_rivoli_460.jpg",
     "title": "Come funziona?",
     "content": [
       "<p>“C'è un parco in biblioteca” è un percorso con tappe e incontri successivi, ciascuno con obiettivi specifici:</p>",
