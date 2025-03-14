@@ -19,7 +19,7 @@
     <!-- About -->
     <div class="flex flex-col gap-16 px-8 py-24 md:flex-row md:px-16 md:gap-0">
       <div class="w-full md:w-1/3 md:pr-16">
-        <NuxtImg :src="`${url}${data.about.img}`" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
+        <NuxtImg :src="data.about.img" alt="Un parco in biblioteca" class="-rotate-12 rounded-tr-[64px] rounded-bl-[64px]" />
       </div>
       <div class="flex flex-col w-full gap-6 md:w-2/3 text-foreground">
         <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.about.title }}</div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="w-full md:w-1/3">
-        <NuxtImg :src="`${url}${data.why.img}`" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
+        <NuxtImg :src="data.why.img" alt="Un parco in biblioteca" class="rounded-tl-[256px] rounded-tr-[128px] rounded-br-[256px] rounded-bl-[128px]" />
       </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
           <div v-html="how" />
         </div>
       </div>
-      <NuxtImg :src="`${url}${data.join.img}`" alt="Un parco in biblioteca" class="w-full md:w-1/3 md:-mt-20" />
+      <NuxtImg :src="data.join.img" alt="Un parco in biblioteca" class="w-full md:w-1/3 md:-mt-20" />
     </div>
   </div>
 

@@ -5,7 +5,7 @@
     "subtitle": "Percorso partecipativo per ripensare insieme<br/>e valorizzare funzioni e spazi del<br/>Parco Salvemini e della Biblioteca Alda Merini"
   },
   "about": {
-    "img": "images/parco_In_biblioteca_1_cropped.jpg",
+    "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Fparco_In_biblioteca_1_cropped.jpg",
     "title": "Un parco in biblioteca? Cioè?",
     "content": [
       "<p>La <strong>biblioteca Alda Merini</strong> e il <strong>parco Salvemini</strong> sono due spazi molto amati a Rivoli, bellissimi e con un enorme potenziale nascosto.</p>",
@@ -13,7 +13,7 @@
       "<p>Ecco perché questo titolo. Un posto così, però, bisogna <strong>pensarlo tutti insieme!</strong></p>"]
   },
   "why": {
-    "img": "images/biblioteca_rivoli.jpg",
+    "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Fbiblioteca_rivoli.jpg",
     "title": "Perché un percorso partecipativo?",
     "content": [
       "<p>Un luogo così bisogna <strong>immaginarlo congiuntamente</strong> e un percorso partecipativo è lo strumento più adatto per farlo perché chiama a raccolta tutti coloro che sono, o possono essere interessati.</p>",
@@ -106,7 +106,7 @@
     ]
   },
   "join": {
-    "img": "images/libri_biblioteca_rivoli.jpg",
+    "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Flibri_biblioteca_rivoli.jpg",
     "title": "Come partecipare?",
     "content": [
       "Partecipare è semplice!",
@@ -117,6 +117,7 @@
   "footer": {
     "title":"Biblioteca Alda Merini",
     "address": "Corso Susa, 130 - 10098 Rivoli",
-    "email": "unparcoinbiblioteca@comune.rivoli.to.it"
+    "email": "unparcoinbiblioteca@comune.rivoli.to.it",
+    "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2FLogo_Ascolto_Attivo_bianco.png"
   }
 }

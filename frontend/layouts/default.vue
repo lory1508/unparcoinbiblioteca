@@ -10,7 +10,7 @@
 
     <!-- Footer -->
     <div class="bg-[#1d1d1b] flex flex-col md:flex-row md:gap-16 gap-8 py-8 items-center  md:pl-32">
-      <NuxtImg :src="`${url}images/Logo_Ascolto_Attivo_bianco.png`" alt="Un Parco In Biblioteca - Logo" width="280" />
+      <NuxtImg :src="data.footer.logo" alt="Un Parco In Biblioteca - Logo" width="280" />
       <div class="flex flex-col text-white">
         <div class="font-black">{{ data.footer.title }}</div>
         <div>{{ data.footer.address }}</div>
