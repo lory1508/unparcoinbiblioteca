@@ -62,10 +62,12 @@
         class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-80 w-80 size-fit custom-title-font hover:scale-105"
         :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('${url}${p.img}');`"
       >
-        {{ p.text }}
+        <div class="w-64">
+          {{ p.text }}
+        </div>
       </div>
     </div>
-    <div class="text-lg">{{ data.principles.note }}</div>
+    <div class="text-xl">{{ data.principles.note }}</div>
   </div>
 
   <!-- How it works -->
@@ -92,7 +94,7 @@
         <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="index%2" />
       </div>
     </div>
-    <div class="text-lg" v-html="data.when.note" />
+    <div class="text-xl" v-html="data.when.note" />
   </div>
 
   <!-- Join -->
