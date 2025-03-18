@@ -1,7 +1,7 @@
 {
   "header": {
     "img": "images/header_parco_biblioteca_460.jpg",
-    "title": "Un parco in biblioteca",
+    "title": "C'è un parco in biblioteca",
     "subtitle": "Percorso partecipativo per ripensare insieme<br/>e valorizzare funzioni e spazi del<br/>Parco Salvemini e della Biblioteca Alda Merini"
   },
   "about": {
@@ -80,15 +80,15 @@
         "color": "purple"
       },
       {
-        "date": "12.05",
-        "time": "dalle ore 18 alle ore 20",
-        "type": "FORMAZIONE",
+        "date": "17.05",
+        "time": "dalle ore 10:30 alle ore 17",
+        "type": "CHARETTE",
         "color": "yellow"
       },
       {
         "date": "24.05",
-        "time": "dalle ore 10:30 alle ore 17",
-        "type": "CHARETTE",
+        "time": "-",
+        "type": "-",
         "color": "blue"
       },
       {
