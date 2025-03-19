@@ -16,7 +16,7 @@
     "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Fbiblioteca_rivoli.jpg",
     "title": "Perché un percorso partecipativo?",
     "content": [
-      "<p>Un luogo così bisogna <strong>immaginarlo congiuntamente</strong> e un percorso partecipativo è lo strumento più adatto per farlo perché chiama a raccolta tutti coloro che sono, o possono essere interessati.</p>",
+      "<p>Un luogo così bisogna <strong>immaginarlo congiuntamente</strong> e un percorso partecipativo è lo strumento più adatto per farlo perché chiama a raccolta tutti coloro che sono o possono essere interessati.</p>",
       "<p>Mettendo in circolo <strong>competenze, energie, esigenze,</strong> riflessioni di tutti, possiamo riuscire a far emergere una visione nuova e innovativa di questo angolo della nostra città; progettarne funzioni e usi che rispondano ai bisogni della comunità, attivando il <strong>protagonismo individuale e collettivo.</strong></p>"
     ]
   },
@@ -82,12 +82,12 @@
       {
         "date": "17.05",
         "time": "dalle ore 10:30 alle ore 17",
-        "type": "CHARETTE",
+        "type": "CHARRETTE",
         "color": "yellow"
       },
       {
         "date": "14.06",
-        "time": "dalle ore 14:30 alle ore 19",
+        "time": "-",
         "type": "ACTION PLANNING",
         "color": "green"
       },
@@ -112,6 +112,10 @@
     "title":"Biblioteca Alda Merini",
     "address": "Corso Susa, 130 - 10098 Rivoli",
     "email": "unparcoinbiblioteca@comune.rivoli.to.it",
-    "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2FLogo_Ascolto_Attivo_bianco.png"
+    "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2FLogo_Ascolto_Attivo_bianco.png",
+    "rivoli": {
+      "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%logo_RIVOLI_sito_white.png",
+      "href": "https://www.comune.rivoli.to.it/"
+    }
   }
 }
