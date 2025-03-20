@@ -114,6 +114,7 @@
     "email": "unparcoinbiblioteca@comune.rivoli.to.it",
     "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2FLogo_Ascolto_Attivo_bianco.png",
     "rivoli": {
+      "title": "www.comune.rivoli.to.it",
       "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%logo_RIVOLI_sito_white.png",
       "href": "https://www.comune.rivoli.to.it/"
     }

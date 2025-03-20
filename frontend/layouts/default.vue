@@ -16,6 +16,7 @@
           <div class="flex flex-col text-white">
             <div class="font-black">{{ data.footer.title }}</div>
             <div>{{ data.footer.address }}</div>
+            <a :href="`${data.footer.rivoli.href}`" target="_blank">{{ data.footer.rivoli.title }}</a>
             <a :href="`mailto:${data.footer.email}`">{{ data.footer.email }}</a>
           </div>
         </div>
