@@ -10,7 +10,8 @@
     "content": [
       "<p>La <strong>biblioteca Alda Merini</strong> e il <strong>parco Salvemini</strong> sono due spazi molto amati a Rivoli, bellissimi e con un enorme potenziale nascosto.</p>",
       "<p>Se provassimo a immaginare l'uno come l'estensione dell’altro, a ripensare la biblioteca ed il parco come un unico spazio, allora potremmo creare un luogo fantastico dove poter stare bene insieme con gli altri, immersi nella cultura, nella natura, nelle relazioni.</p>",
-      "<p>Ecco perché questo titolo. Un posto così, però, bisogna <strong>pensarlo tutti insieme!</strong></p>"]
+      "<p>Ecco perché questo titolo. Un posto così, però, bisogna <strong>pensarlo tutti insieme!</strong></p>"
+    ]
   },
   "why": {
     "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Fbiblioteca_rivoli.jpg",
@@ -99,6 +100,18 @@
       }
     ]
   },
+  "externalLinks": {
+    "gallery": {
+      "img": "images/Gallery.png",
+      "href": "https://sites.google.com/view/gallery-unparcoinbiblioteca/home-page",
+      "text": "Gallery"
+    },
+    "updates": {
+      "img": "images/aggiornamenti.png",
+      "href": "https://drive.google.com/drive/folders/1PBGNY7MXtK0mvlKXgbOuriN5qLM_2OY9?usp=sharing",
+      "text": "Segui gli aggiornamenti"
+    }
+  },
   "join": {
     "img": "https://unparcoinbiblioteca.netlify.app/.netlify/images?url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2Flibri_biblioteca_rivoli.jpg",
     "title": "Come partecipare?",
@@ -109,7 +122,7 @@
     ]
   },
   "footer": {
-    "title":"Biblioteca Alda Merini",
+    "title": "Biblioteca Alda Merini",
     "address": "Corso Susa, 130 - 10098 Rivoli",
     "email": "unparcoinbiblioteca@comune.rivoli.to.it",
     "logo": "https://unparcoinbiblioteca.netlify.app/.netlify/images?w=280&url=https:%2F%2Funparcoinbiblioteca.netlify.app%2Fimages%2FLogo_Ascolto_Attivo_bianco.png",
