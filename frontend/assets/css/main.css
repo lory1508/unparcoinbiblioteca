@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@nuxt/ui';
+
 .custom-title-font {
   font-family: 'OpenDyslexic', cursive;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
   color: #3c3c3b;
   font-size: 20px;

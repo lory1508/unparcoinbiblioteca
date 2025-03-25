@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/strapi', '@nuxtjs/strapi'],
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/strapi', '@nuxtjs/strapi', '@nuxt/ui'],
   strapi: {
     url: process.env.STRAPI_URL || 'http://localhost:1337',
     token: process.env.STRAPI_TOKEN || undefined,

@@ -113,6 +113,14 @@
     <div class="text-xl" v-html="data.when.note" />
   </div>
 
+  <!-- Gallery -->
+  <pre>{{ gallery }}</pre>
+  <div v-if="gallery">
+    <UCarousel v-slot="{ item }" :items="gallery.media" class="w-full max-w-xs mx-auto">
+      <img :src="item" width="320" height="320" class="rounded-lg" />
+    </UCarousel>
+  </div>
+
   <!-- Join -->
   <div class="flex flex-col">
     <div
@@ -154,16 +162,26 @@
   const { find } = useStrapi()
 
   const config = useRuntimeConfig()
+  const loading = ref(false)
   const url = config.public.environment
   const principleBgs = ['green', 'red', 'blue', 'purple']
+  const gallery = ref()
 
   const principleBg = (index) => {
     return principleBgs[index % principleBgs.length]
   }
 
   onMounted(async () => {
-    const response = await find('gallery')
-    console.log(response)
+    try {
+      loading.value = true
+      const response = await find('gallery', { populate: ['media'] })
+      gallery.value = response?.data?.attributes
+      console.log(gallery.value)
+    } catch (err) {
+      console.error(err)
+    } finally {
+      loading.value = false
+    }
   })
 </script>
 
