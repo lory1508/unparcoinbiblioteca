@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       environment: process.env.ENVIRONMENT || 'development',
+      strapi_url: process.env.STRAPI_URL || '',
     },
   },
 
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/strapi', '@nuxtjs/strapi', '@nuxt/ui'],
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/strapi', '@nuxtjs/strapi'],
   strapi: {
     url: process.env.STRAPI_URL || 'http://localhost:1337',
     token: process.env.STRAPI_TOKEN || undefined,

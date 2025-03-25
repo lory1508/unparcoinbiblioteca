@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@nuxt/ui';
-
 .custom-title-font {
   font-family: 'OpenDyslexic', cursive;
 }

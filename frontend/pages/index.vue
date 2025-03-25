@@ -114,11 +114,20 @@
   </div>
 
   <!-- Gallery -->
-  <pre>{{ gallery }}</pre>
-  <div v-if="gallery">
-    <UCarousel v-slot="{ item }" :items="gallery.media" class="w-full max-w-xs mx-auto">
-      <img :src="item" width="320" height="320" class="rounded-lg" />
-    </UCarousel>
+  <div v-if="gallery" class="flex flex-col items-center justify-center w-full px-4 py-4 mb-8 bg-biblioteca-green">
+    <div class="px-6 pb-2 text-3xl tracking-tighter text-white uppercase xl:px-32 xl:text-5xl custom-title-font">
+      {{ gallery.title }}
+    </div>
+    <div v-if="gallery.content" class="flex flex-col justify-center w-2/3 text-white">
+      <StrapiBlocks :content="gallery.content" :modifiers="modifiers" :blocks="blocks" />
+    </div>
+    <div class="flex flex-col justify-center px-16 mt-4 w-fit lg:flex-row">
+      <div class="w-1/3">
+        <NCarousel autoplay show-arrow>
+          <img v-for="(c, index) in carousel" :key="`carousel_${index}`" :src="c" />
+        </NCarousel>
+      </div>
+    </div>
   </div>
 
   <!-- Join -->
@@ -158,14 +167,18 @@
 
 <script setup>
   import data from '@/utils/data.json'
+  import { NCarousel } from 'naive-ui'
+  import { StrapiBlocks } from 'vue-strapi-blocks-renderer'
 
   const { find } = useStrapi()
 
   const config = useRuntimeConfig()
   const loading = ref(false)
   const url = config.public.environment
+  const strapi_url = config.public.strapi_url
   const principleBgs = ['green', 'red', 'blue', 'purple']
   const gallery = ref()
+  const carousel = ref([])
 
   const principleBg = (index) => {
     return principleBgs[index % principleBgs.length]
@@ -176,7 +189,8 @@
       loading.value = true
       const response = await find('gallery', { populate: ['media'] })
       gallery.value = response?.data?.attributes
-      console.log(gallery.value)
+      carousel.value = gallery.value.media.data.map((md) => `${strapi_url}/${md.attributes.url.substring(1)}`)
+      console.log(carousel.value)
     } catch (err) {
       console.error(err)
     } finally {
