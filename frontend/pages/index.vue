@@ -119,7 +119,6 @@
       {{ gallery.title }}
     </div>
     <div v-if="gallery.content" class="flex flex-col justify-center w-2/3 text-white">
-      <StrapiBlocks :content="gallery.content" :modifiers="modifiers" :blocks="blocks" />
     </div>
     <div class="flex flex-col justify-center px-16 mt-4 w-fit lg:flex-row">
       <div class="w-1/3">
@@ -168,14 +167,11 @@
 <script setup>
   import data from '@/utils/data.json'
   import { NCarousel } from 'naive-ui'
-  import { StrapiBlocks } from 'vue-strapi-blocks-renderer'
-
-  const { find } = useStrapi()
 
   const config = useRuntimeConfig()
   const loading = ref(false)
   const url = config.public.environment
-  const strapi_url = config.public.strapi_url
+  const sanity = config.public.sanity
   const principleBgs = ['green', 'red', 'blue', 'purple']
   const gallery = ref()
   const carousel = ref([])
@@ -187,10 +183,10 @@
   onMounted(async () => {
     try {
       loading.value = true
-      const response = await find('gallery', { populate: ['media'] })
-      gallery.value = response?.data?.attributes
-      carousel.value = gallery.value.media.data.map((md) => `${strapi_url}/${md.attributes.url.substring(1)}`)
-      console.log(carousel.value)
+      const query = "*%5B_type+%3D%3D+%27gallery%27%5D+%7B%0A++title%2C+%0A++content%2C%0A++images%5B%5D+%7B%0A++++%27url%27%3A+asset-%3Eurl%0A++%7D%0A%7D&perspective=drafts"
+      const response = await fetch(`https://${sanity.id}.api.sanity.io/${sanity.version}/data/query/production?query=${query}`)
+      // gallery.value = response?.data?.attributes
+      console.log(response)
     } catch (err) {
       console.error(err)
     } finally {

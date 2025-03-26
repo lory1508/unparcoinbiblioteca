@@ -13,7 +13,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       environment: process.env.ENVIRONMENT || 'development',
-      strapi_url: process.env.STRAPI_URL || '',
+      sanity: {
+        id: process.env.SANITY_ID || '',
+        version: process.env.SANITY_VERSION || '',
+      },
     },
   },
 
@@ -27,16 +30,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/strapi', '@nuxtjs/strapi'],
-  strapi: {
-    url: process.env.STRAPI_URL || 'http://localhost:1337',
-    token: process.env.STRAPI_TOKEN || undefined,
-    prefix: '/api',
-    admin: '/admin',
-    version: 'v4',
-    cookie: {},
-    cookieName: 'strapi_jwt',
-  },
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon'],
   fonts: {
     openDyslexic: {
       weights: [400, 600],
