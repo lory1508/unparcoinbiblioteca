@@ -19,3 +19,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'gallery'
+    label: 'Galleria'
+    folder: 'content/gallery'
+    format: 'frontmatter'
+    create: true
+    slug: 'gallery-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titolo', name: 'title', widget: 'string' }
+      - { label: 'Contenuto', name: 'content', widget: 'markdown' }
+      - { label: 'Foto', name: 'images', widget: 'image' }
