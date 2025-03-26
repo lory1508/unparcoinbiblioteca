@@ -140,7 +140,20 @@
     "rivoli": {
       "title": "www.comune.rivoli.to.it",
       "logo": "images/logo_RIVOLI_sito_white.png",
-      "href": "https://www.comune.rivoli.to.it/"
+      "href": "https://www.comune.rivoli.to.it/",
+      "alt": "Logo Città di Rivoli"
+    },
+    "biblioteca": {
+      "title": "Biblioteca Alda Merini",
+      "logo": "images/logo_biblioteca_Alda_Merini.jpg",
+      "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Luoghi/Biblioteca-civica-Alda-Merini",
+      "alt": "Logo Biblioteca Alda Merini"
+    },
+    "ascoltoAttivo": {
+      "title": "Ascolto Attivo",
+      "logo": "images/ascolto-attivo-logo.svg",
+      "href": "https://ascoltoattivo.net/",
+      "alt": "Logo Ascolto Attivo"
     }
   }
 }
