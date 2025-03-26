@@ -75,6 +75,12 @@
         "color": "blue"
       },
       {
+        "date": "28.04",
+        "time": "dalle ore 18 alle ore 20",
+        "type": "FORMAZIONE",
+        "color": "green"
+      },
+      {
         "date": "5.05",
         "time": "ore 20:30",
         "type": "APPROFONDIMENTO",
@@ -88,7 +94,7 @@
       },
       {
         "date": "14.06",
-        "time": "-",
+        "time": "dalle ore 10:30 alle ore 15",
         "type": "ACTION PLANNING",
         "color": "green"
       },
@@ -110,6 +116,11 @@
       "img": "images/aggiornamenti.png",
       "href": "https://drive.google.com/drive/folders/1PBGNY7MXtK0mvlKXgbOuriN5qLM_2OY9?usp=sharing",
       "text": "Segui gli aggiornamenti"
+    },
+    "program": {
+      "img": "images/programma.png",
+      "href": "https://drive.google.com/file/d/1tCdc1KMjvAaTd1KbE5jG6DpRM4SXEFbc/view?usp=sharing",
+      "text": "Scarica il programma"
     }
   },
   "join": {
