@@ -1,4 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import AutoImport from 'unplugin-auto-import/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
@@ -30,12 +33,26 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon'],
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxt/icon', 'nuxtjs-naive-ui'],
   fonts: {
     openDyslexic: {
       weights: [400, 600],
       styles: ['normal', 'italic'],
       subsets: ['cyrillic-ext', 'cyrillic', 'greek-ext', 'greek', 'vietnamese', 'latin-ext', 'latin'],
     },
+  },
+  vite: {
+    plugins: [
+      AutoImport({
+        imports: [
+          {
+            'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar'],
+          },
+        ],
+      }),
+      Components({
+        resolvers: [NaiveUiResolver()],
+      }),
+    ],
   },
 })
