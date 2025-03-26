@@ -1,33 +1,21 @@
-backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-
-media_folder: static/img
-public_folder: /img
-
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    format: 'frontmatter'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'gallery'
     label: 'Galleria'
-    folder: 'content/gallery'
-    format: 'frontmatter'
-    create: true
-    slug: 'gallery-{{slug}}'
+    delete: false # Prevents deletion since it's a single-type collection
     editor:
       preview: false
-    fields:
-      - { label: 'Titolo', name: 'title', widget: 'string' }
-      - { label: 'Contenuto', name: 'content', widget: 'markdown' }
-      - { label: 'Foto', name: 'images', widget: 'image' }
+    files:
+      - name: 'gallery'
+        label: 'Galleria'
+        file: 'content/gallery.md'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'content', label: 'Content', widget: 'markdown' }
+          - name: 'images'
+            label: 'Images'
+            widget: 'list'
+            summary: '{{fields.image}}'
+            field:
+              name: 'image'
+              label: 'Image'
+              widget: 'image'
