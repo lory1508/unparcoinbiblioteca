@@ -1,25 +1,25 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: staging # Branch to update (optional; defaults to master)
 
 media_folder: static/img
 public_folder: /img
 
 collections:
   - name: 'gallery'
-    label: 'Gallery'
+    label: 'Galleria'
     delete: false # Prevents deletion since it's a single-type collection
     editor:
       preview: false
     files:
       - name: 'gallery'
-        label: 'Gallery'
+        label: 'Galleria'
         file: 'content/gallery.md' # Change the path according to your structure
         fields:
-          - { name: 'title', label: 'Title', widget: 'string' }
-          - { name: 'content', label: 'Content', widget: 'markdown' }
+          - { name: 'title', label: 'Titolo', widget: 'string' }
+          - { name: 'content', label: 'Contenuto', widget: 'markdown' }
           - name: 'images'
-            label: 'Images'
+            label: 'Foto'
             widget: 'list'
             summary: '{{fields.image}}'
             field:
