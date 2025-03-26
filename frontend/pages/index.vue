@@ -118,7 +118,8 @@
     <div class="px-6 pb-2 text-3xl tracking-tighter text-white uppercase xl:px-32 xl:text-5xl custom-title-font">
       {{ gallery.title }}
     </div>
-    <div v-if="gallery.content" class="flex flex-col justify-center w-2/3 text-white">
+    <div v-if="gallery.content" class="flex flex-col justify-center text-white w-fit">
+      <PortableText :value="gallery.content" />
     </div>
     <div class="flex flex-col justify-center px-16 mt-4 w-fit lg:flex-row">
       <div class="w-1/3">
@@ -167,6 +168,7 @@
 <script setup>
   import data from '@/utils/data.json'
   import { NCarousel } from 'naive-ui'
+  import { PortableText } from '@portabletext/vue'
 
   const config = useRuntimeConfig()
   const loading = ref(false)
@@ -180,13 +182,24 @@
     return principleBgs[index % principleBgs.length]
   }
 
+  const getGallery = async () => {
+    try {
+      const query =
+        '*%5B_type+%3D%3D+%27gallery%27%5D+%7B%0A++title%2C+%0A++content%2C%0A++images%5B%5D+%7B%0A++++%27url%27%3A+asset-%3Eurl%0A++%7D%0A%7D&perspective=drafts'
+      await fetch(`https://${sanity.id}.api.sanity.io/${sanity.version}/data/query/production?query=${query}`)
+        .then((response) => response.json())
+        .then((data) => (gallery.value = data?.result[0]))
+        .catch((error) => console.error('Error:', error))
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   onMounted(async () => {
     try {
       loading.value = true
-      const query = "*%5B_type+%3D%3D+%27gallery%27%5D+%7B%0A++title%2C+%0A++content%2C%0A++images%5B%5D+%7B%0A++++%27url%27%3A+asset-%3Eurl%0A++%7D%0A%7D&perspective=drafts"
-      const response = await fetch(`https://${sanity.id}.api.sanity.io/${sanity.version}/data/query/production?query=${query}`)
-      // gallery.value = response?.data?.attributes
-      console.log(response)
+      await getGallery()
+      carousel.value = gallery.value?.images.map((i) => i.url)
     } catch (err) {
       console.error(err)
     } finally {
