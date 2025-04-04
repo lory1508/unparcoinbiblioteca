@@ -103,10 +103,12 @@
   </div>
 
   <!-- When -->
-  <div class="flex flex-col items-center justify-center gap-16 px-6 py-16 md:px-16">
-    <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.when.title }}</div>
-    <div class="flex flex-wrap justify-center w-full gap-32 2xl:flex-row 2xl:gap-0">
-      <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="w-fit">
+  <div class="flex flex-col items-center justify-center gap-16 px-6 py-16 lg:px-24">
+    <div class="text-2xl tracking-tighter text-center uppercase md:text-4xl custom-title-font">
+      {{ data.when.title }}
+    </div>
+    <div class="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-16">
+      <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="items-center justify-center w-fit">
         <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="Boolean(index % 2)" />
       </div>
     </div>
@@ -114,7 +116,7 @@
   </div>
 
   <!-- External Links -->
-  <div class="flex flex-col justify-center w-full gap-8 mb-8 lg:flex-row">
+  <div class="flex flex-col items-center justify-center w-full gap-8 mb-8 lg:flex-row">
     <a :href="data.externalLinks.gallery.href" target="_blank">
       <div
         class="flex items-center justify-center text-2xl text-center text-white uppercase transition-all duration-300 rounded-full h-36 w-96 size-fit custom-title-font hover:scale-105"

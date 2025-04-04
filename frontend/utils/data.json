@@ -69,6 +69,12 @@
         "color": "red"
       },
       {
+        "date": "8.04",
+        "time": "dalle ore 18 alle ore 20",
+        "type": "FORMAZIONE",
+        "color": "purple"
+      },
+      {
         "date": "16.04",
         "time": "ore 20:30",
         "type": "LABORATORIO VISIONING",
@@ -79,6 +85,12 @@
         "time": "dalle ore 18 alle ore 20",
         "type": "FORMAZIONE",
         "color": "green"
+      },
+      {
+        "date": "29.04",
+        "time": "dalle ore 18 alle ore 20",
+        "type": "FORMAZIONE",
+        "color": "red"
       },
       {
         "date": "5.05",
