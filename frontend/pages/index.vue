@@ -107,7 +107,7 @@
     <div class="text-2xl tracking-tighter text-center uppercase md:text-4xl custom-title-font">
       {{ data.when.title }}
     </div>
-    <div class="flex flex-wrap items-center justify-center w-full gap-8 lg:px-16">
+    <div class="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-16">
       <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="items-center justify-center w-fit">
         <Date :date="date.date" :time="date.time" :type="date.type" :color="date.color" :up="Boolean(index % 2)" />
       </div>
