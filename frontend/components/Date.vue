@@ -1,5 +1,11 @@
 <template>
-  <div class="flex flex-row items-center justify-center gap-2 h-fit">
+  <div
+    class="flex flex-row items-center justify-center gap-2 h-fit"
+    :class="{
+      'cursor-pointer': href,
+    }"
+    @click="goto"
+  >
     <div class="flex items-center justify-center h-fit">
       <div
         class="flex flex-col gap-2 px-8 pl-4 text-center border-8 border-r-0 rounded-r-md"
@@ -12,8 +18,18 @@
         }"
       >
         <div class="text-4xl font-bold custom-title-font">{{ date }}</div>
-        <div class="flex flex-col">
-          <div class="font-black text-md text-nowrap">{{ type }}</div>
+        <div class="flex flex-col text-center">
+          <div v-if="href" class="absolute -mt-20 custom-cursive">Scopri di più!</div>
+          <div class="flex flex-row text-center">
+            <div
+              class="w-full font-black text-center text-md text-nowrap"
+              :class="{
+                'bg-pink-300 cursor-pointer px-2 italic': href,
+              }"
+            >
+              {{ type }}
+            </div>
+          </div>
           <div class="text-md text-nowrap">{{ time }}</div>
         </div>
       </div>
@@ -53,7 +69,22 @@
     type: String,
     color: String,
     up: Boolean,
+    href: {
+      type: String,
+      default: '',
+    },
   })
+
+  const goto = async () => {
+    if (!props.href) return
+
+    await navigateTo(props.href, {
+      external: true,
+      open: {
+        target: '_blank',
+      },
+    })
+  }
 </script>
 
 <style></style>

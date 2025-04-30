@@ -7,8 +7,15 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
   color: #3c3c3b;
   font-size: 20px;
+}
+
+.custom-cursive {
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Gochi Hand', cursive;
+  font-weight: bolder;
+  font-style: normal;
 }
