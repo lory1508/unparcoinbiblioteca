@@ -116,6 +116,7 @@
           :color="date.color"
           :up="Boolean(index % 2)"
           :href="date?.href || ''"
+          :background="date?.background || ''"
         />
       </div>
     </div>

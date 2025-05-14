@@ -23,9 +23,12 @@
           <div class="flex flex-row text-center">
             <div
               class="w-full font-black text-center text-md text-nowrap"
-              :class="{
-                'bg-pink-300 cursor-pointer px-2 italic': href,
-              }"
+              :class="
+                ({
+                  'cursor-pointer px-2 italic': href,
+                },
+                background)
+              "
             >
               {{ type }}
             </div>
@@ -69,10 +72,8 @@
     type: String,
     color: String,
     up: Boolean,
-    href: {
-      type: String,
-      default: '',
-    },
+    href: String,
+    background: String,
   })
 
   const goto = async () => {

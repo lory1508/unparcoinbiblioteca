@@ -84,7 +84,7 @@
         "date": "28.04",
         "time": "dalle ore 18 alle ore 20",
         "type": "FORMAZIONE",
-        "color": "green"
+        "color": "yellow"
       },
       {
         "date": "29.04",
@@ -97,13 +97,16 @@
         "time": "ore 21:00",
         "type": "APPROFONDIMENTO",
         "color": "purple",
-        "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-parco-in-biblioteca-Approfondimento-con-Antonella-Agnoli-e-Daniela-Ciaffi"
+        "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-parco-in-biblioteca-Approfondimento-con-Antonella-Agnoli-e-Daniela-Ciaffi",
+        "background": "bg-pink-300"
       },
       {
         "date": "17.05",
         "time": "dalle ore 10:30 alle ore 17",
         "type": "CHARRETTE",
-        "color": "yellow"
+        "color": "yellow",
+        "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-Parco-in-Biblioteca-Charrette",
+        "background": "bg-amber-100"
       },
       {
         "date": "14.06",
