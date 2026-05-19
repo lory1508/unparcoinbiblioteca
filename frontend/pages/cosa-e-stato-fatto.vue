@@ -26,6 +26,7 @@
           :background="date?.background || ''"
         />
       </div>
+      <Carousel v-if="items" :items="items" mode="auto" />
     </div>
     <div class="text-xl" v-html="data.note" />
   </div>
@@ -33,4 +34,14 @@
 
 <script setup>
   import data from "@/utils/cosa-e-stato-fatto.json";
+  import Carousel from "~/components/Carousel.vue";
+
+  const items = [
+    "images/stock/fog.jpg",
+    "images/stock/rocks.jpg",
+    "images/stock/sea.jpg",
+    "images/stock/ship.jpg",
+    "images/stock/sunset.jpg",
+    "images/stock/trees.jpg",
+  ];
 </script>
