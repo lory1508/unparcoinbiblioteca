@@ -11,11 +11,18 @@
         background-attachment: fixed;
       "
     >
-      <div class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55">
-        <div class="text-4xl font-bold tracking-tighter text-center uppercase md:text-6xl custom-title-font">
+      <div
+        class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55"
+      >
+        <div
+          class="text-4xl font-bold tracking-tighter text-center uppercase md:text-6xl custom-title-font"
+        >
           {{ data.header.title }}
         </div>
-        <div class="max-w-4xl text-lg font-light text-center md:text-4xl" v-html="data.header.subtitle" />
+        <div
+          class="max-w-4xl text-lg font-light text-center md:text-4xl"
+          v-html="data.header.subtitle"
+        />
       </div>
     </div>
     <Divider />
@@ -30,8 +37,16 @@
         />
       </div>
       <div class="flex flex-col w-full gap-6 md:w-2/3 text-foreground">
-        <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.about.title }}</div>
-        <div v-for="(item, index) in data.about.content" :key="`about-${index}`" class="flex flex-col">
+        <div
+          class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"
+        >
+          {{ data.about.title }}
+        </div>
+        <div
+          v-for="(item, index) in data.about.content"
+          :key="`about-${index}`"
+          class="flex flex-col"
+        >
           <span v-html="item" />
         </div>
       </div>
@@ -39,19 +54,29 @@
 
     <!-- Why -->
     <div class="flex flex-col justify-center gap-16 px-6 lg:flex-row md:px-32">
-      <div class="flex flex-col w-full transition-all duration-300 hover:scale-105 lg:w-2/3 lg:max-w-xl">
+      <div
+        class="flex flex-col w-full transition-all duration-300 hover:scale-105 lg:w-2/3 lg:max-w-xl"
+      >
         <div
           class="flex flex-col w-full gap-6 p-8 bg-white border rounded-br-none shadow-2xl rounded-3xl border-zinc-200"
         >
-          <div class="w-full text-2xl tracking-tighter uppercase lg:text-4xl custom-title-font text-wrap">
+          <div
+            class="w-full text-2xl tracking-tighter uppercase lg:text-4xl custom-title-font text-wrap"
+          >
             {{ data.why.title }}
           </div>
-          <div v-for="(why, index) in data.why.content" :key="`why-${index}`" class="flex flex-col gap-4">
+          <div
+            v-for="(why, index) in data.why.content"
+            :key="`why-${index}`"
+            class="flex flex-col gap-4"
+          >
             <span v-html="why" />
           </div>
         </div>
         <div class="self-end inline-block w-12 -mt-1 overflow-hidden">
-          <div class="h-16 origin-top-left transform -rotate-45 bg-white border border-zinc-200"></div>
+          <div
+            class="h-16 origin-top-left transform -rotate-45 bg-white border border-zinc-200"
+          ></div>
         </div>
       </div>
       <div class="w-full lg:w-1/3">
@@ -65,8 +90,14 @@
   </div>
 
   <!-- Principles -->
-  <div class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32">
-    <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.principles.title }}</div>
+  <div
+    class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32"
+  >
+    <div
+      class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"
+    >
+      {{ data.principles.title }}
+    </div>
     <div class="flex flex-wrap justify-center w-full gap-4">
       <div
         v-for="(p, index) in data.principles.content"
@@ -79,7 +110,9 @@
         </div>
       </div>
     </div>
-    <div class="text-xl">{{ data.principles.note }}</div>
+    <div v-if="data.principles.note" class="text-xl">
+      {{ data.principles.note }}
+    </div>
   </div>
 
   <!-- How it works -->
@@ -88,8 +121,14 @@
       class="w-full h-[500px]"
       :style="`background-position: 35% 74%; background-size: auto; background-image: url('${url}${data.how_it_works.img}'); background-attachment: fixed;`"
     />
-    <div class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red">
-      <div class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font">{{ data.how_it_works.title }}</div>
+    <div
+      class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red"
+    >
+      <div
+        class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"
+      >
+        {{ data.how_it_works.title }}
+      </div>
       <div class="justify-center px-6 text-center md:px-32">
         <div
           v-for="(how, index) in data.how_it_works.content"
@@ -103,29 +142,30 @@
   </div>
 
   <!-- When -->
-  <div class="flex flex-col items-center justify-center gap-16 px-6 py-16 lg:px-24">
-    <div class="text-2xl tracking-tighter text-center uppercase md:text-4xl custom-title-font">
+  <div
+    class="flex flex-col items-center justify-center gap-16 px-6 py-16 lg:px-24"
+  >
+    <div
+      class="text-2xl tracking-tighter text-center uppercase md:text-4xl custom-title-font"
+    >
       {{ data.when.title }}
     </div>
-    <div class="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-16">
-      <div v-for="(date, index) in data.when.dates" :key="`when-${index}`" class="items-center justify-center w-fit">
-        <Date
-          :date="date.date"
-          :time="date.time"
-          :type="date.type"
-          :color="date.color"
-          :up="Boolean(index % 2)"
-          :href="date?.href || ''"
-          :background="date?.background || ''"
-        />
-      </div>
+    <div class="flex flex-row items-center gap-2 text-biblioteca-purple">
+      <NuxtLink
+        href="/cosa-e-stato-fatto"
+        class="flex flex-row items-center gap-8 px-4 py-2 text-xl font-semibold transition-all duration-300 hover:scale-105 custom-title-font"
+      >
+        <span> Scopri di più sugli incontri passati </span>
+        <Arrow class="w-52 rotate-[30deg]" />
+      </NuxtLink>
     </div>
-    <div class="text-xl" v-html="data.when.note" />
   </div>
 
   <!-- External Links -->
-  <div class="flex flex-col items-center justify-center w-full gap-8 mb-8 lg:flex-row">
-    <a :href="data.externalLinks.gallery.href" target="_blank">
+  <div
+    class="flex flex-col items-center justify-center w-full gap-8 mb-8 lg:flex-row"
+  >
+    <!-- <a :href="data.externalLinks.gallery.href" target="_blank">
       <div
         class="flex items-center justify-center text-2xl text-center text-white uppercase transition-all duration-300 rounded-full h-36 w-96 size-fit custom-title-font hover:scale-105"
         :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url('${url}${data.externalLinks.gallery.img}');`"
@@ -134,7 +174,7 @@
           {{ data.externalLinks.gallery.text }}
         </div>
       </div>
-    </a>
+    </a> -->
     <a :href="data.externalLinks.updates.href" target="_blank">
       <div
         class="flex items-center justify-center h-40 text-xl text-center text-white uppercase transition-all duration-300 scale-110 rounded-full w-[420px] size-fit custom-title-font hover:scale-125"
@@ -145,7 +185,7 @@
         </div>
       </div>
     </a>
-    <a :href="data.externalLinks.program.href" target="_blank">
+    <!-- <a :href="data.externalLinks.program.href" target="_blank">
       <div
         class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-36 w-96 size-fit custom-title-font hover:scale-105"
         :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url('${url}${data.externalLinks.program.img}');`"
@@ -154,7 +194,7 @@
           {{ data.externalLinks.program.text }}
         </div>
       </div>
-    </a>
+    </a> -->
   </div>
 
   <!-- Join -->
@@ -164,7 +204,9 @@
     >
       {{ data.join.title }}
     </div>
-    <div class="flex flex-col gap-12 px-6 py-8 text-white xl:px-32 xl:flex-row bg-biblioteca-blue">
+    <div
+      class="flex flex-col gap-12 px-6 py-8 text-white xl:px-32 xl:flex-row bg-biblioteca-blue"
+    >
       <div class="flex flex-col w-full gap-4 xl:w-2/3">
         <div
           v-for="(how, index) in data.join.content"
@@ -174,7 +216,11 @@
           <div v-html="how" />
         </div>
       </div>
-      <img :src="data.join.img" alt="Un parco in biblioteca" class="w-full xl:w-1/3 xl:-mt-20" />
+      <img
+        :src="data.join.img"
+        alt="Un parco in biblioteca"
+        class="w-full xl:w-1/3 xl:-mt-20"
+      />
     </div>
   </div>
 
@@ -193,15 +239,16 @@
 </template>
 
 <script setup>
-  import data from '@/utils/data.json'
+  import Arrow from "~/components/Arrow.vue";
+  import data from "@/utils/data.json";
 
-  const config = useRuntimeConfig()
-  const url = config.public.environment
-  const principleBgs = ['green', 'red', 'blue', 'purple']
+  const config = useRuntimeConfig();
+  const url = config.public.environment;
+  const principleBgs = ["green", "red", "blue", "purple"];
 
   const principleBg = (index) => {
-    return principleBgs[index % principleBgs.length]
-  }
+    return principleBgs[index % principleBgs.length];
+  };
 </script>
 
 <style>

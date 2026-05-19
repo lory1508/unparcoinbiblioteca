@@ -1,0 +1,74 @@
+{
+  "title": "Che cosa è stato fatto",
+  "dates": [
+    {
+      "date": "26.03",
+      "time": "ore 18:30",
+      "type": "LANCIO",
+      "color": "green"
+    },
+    {
+      "date": "7.04",
+      "time": "dalle ore 18 alle ore 20",
+      "type": "FORMAZIONE",
+      "color": "red"
+    },
+    {
+      "date": "8.04",
+      "time": "dalle ore 18 alle ore 20",
+      "type": "FORMAZIONE",
+      "color": "purple"
+    },
+    {
+      "date": "16.04",
+      "time": "ore 20:30",
+      "type": "LABORATORIO VISIONING",
+      "color": "blue"
+    },
+    {
+      "date": "28.04",
+      "time": "dalle ore 18 alle ore 20",
+      "type": "FORMAZIONE",
+      "color": "yellow"
+    },
+    {
+      "date": "29.04",
+      "time": "dalle ore 18 alle ore 20",
+      "type": "FORMAZIONE",
+      "color": "blue"
+    },
+    {
+      "date": "5.05",
+      "time": "ore 21:00",
+      "type": "APPROFONDIMENTO",
+      "color": "purple",
+      "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-parco-in-biblioteca-Approfondimento-con-Antonella-Agnoli-e-Daniela-Ciaffi",
+      "background": "bg-pink-300"
+    },
+    {
+      "date": "17.05",
+      "time": "dalle ore 10:30 alle ore 17",
+      "type": "CHARRETTE",
+      "color": "yellow",
+      "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-Parco-in-Biblioteca-Charrette",
+      "background": "bg-amber-100"
+    },
+    {
+      "date": "14.06",
+      "time": "dalle ore 10:30 alle ore 15",
+      "type": "ACTION PLANNING",
+      "color": "green",
+      "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/Laboratorio-di-Action-Planning-C-e-un-Parco-in-Biblioteca",
+      "background": "bg-green-100"
+    },
+    {
+      "date": "30.06",
+      "time": "ore 20:00",
+      "type": "ESITI",
+      "color": "red",
+      "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-Parco-in-Biblioteca-Esiti",
+      "background": "bg-red-100"
+    }
+  ],
+  "note": "Tre mesi di incontri, laboratori, interviste e dibattiti per elaborare proposte su funzioni e progettualità, e ripensare gli spazi fisici di biblioteca e parco per accogliere queste nuove visioni. Gli incontri si terranno presso la <strong>biblioteca Alda Merini e il parco Salvemini</strong>."
+}
