@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col w-full bg-gradient-to-br from-sky-50 to-sky-100">
+  <div
+    class="flex flex-col w-full min-h-screen bg-gradient-to-br from-sky-50 to-sky-100"
+  >
     <!-- Header -->
     <div class="flex flex-col items-center md:items-start">
       <!-- <div class="sticky top-0 flex flex-col w-full bg-white bg-opacity-50" > -->

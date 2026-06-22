@@ -1,5 +1,7 @@
 <template>
+  <Loader v-if="loading" :speed="5" text="Sto caricando..." />
   <div
+    v-else
     class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32"
   >
     <div
@@ -60,6 +62,7 @@
 <script setup>
   import data from "@/utils/cosa-e-stato-fatto.json";
   import Carousel from "~/components/Carousel.vue";
+  import Loader from "~/components/Loader.vue";
 
   const items = [
     "images/stock/fog.jpg",
@@ -69,4 +72,6 @@
     "images/stock/sunset.jpg",
     "images/stock/trees.jpg",
   ];
+
+  const loading = ref(true);
 </script>
