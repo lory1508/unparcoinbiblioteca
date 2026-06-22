@@ -16,8 +16,10 @@
         <img
           :src="item"
           :data-index="i"
+          loading="lazy"
           @load="updateHeight"
           class="w-full pointer-events-none select-none"
+          alt="Carousel image"
           :class="
             mode === 'fixed' ? 'h-[400px] object-cover' : 'object-contain'
           "

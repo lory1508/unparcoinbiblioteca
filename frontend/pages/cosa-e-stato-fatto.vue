@@ -74,4 +74,22 @@
   ];
 
   const loading = ref(true);
+
+  const preloadImages = (paths) => {
+    return Promise.all(
+      paths.map((src) => {
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = resolve; // non bloccare tutto se una fallisce
+        });
+      }),
+    );
+  };
+
+  onMounted(async () => {
+    await preloadImages(items);
+    loading.value = false;
+  });
 </script>
