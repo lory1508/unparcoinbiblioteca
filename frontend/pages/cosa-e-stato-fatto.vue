@@ -43,6 +43,16 @@
         /> -->
       </div>
     </div>
+    <a :href="data.externalLinks.updates.href" target="_blank">
+      <div
+        class="flex items-center justify-center h-40 text-xl text-center text-white uppercase transition-all duration-300 scale-110 rounded-full w-[420px] size-fit custom-title-font hover:scale-125"
+        :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url('${url}${data.externalLinks.updates.img}');`"
+      >
+        <div class="w-64">
+          {{ data.externalLinks.updates.text }}
+        </div>
+      </div>
+    </a>
     <div class="pb-16 text-xl" v-html="data.note" />
   </div>
 </template>

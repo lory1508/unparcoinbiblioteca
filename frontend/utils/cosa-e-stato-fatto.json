@@ -1,5 +1,12 @@
 {
   "title": "Che cosa è stato fatto",
+  "externalLinks": {
+    "updates": {
+      "img": "images/aggiornamenti.png",
+      "href": "https://drive.google.com/drive/folders/1PBGNY7MXtK0mvlKXgbOuriN5qLM_2OY9?usp=sharing",
+      "text": "Percorso e Relazione finale"
+    }
+  },
   "dates": [
     {
       "date": "26.03",
