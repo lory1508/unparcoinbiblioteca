@@ -6,7 +6,7 @@
     <div class="flex flex-col items-center md:items-start">
       <!-- <div class="sticky top-0 flex flex-col w-full bg-white bg-opacity-50" > -->
       <div
-        class="flex flex-row items-center justify-between w-full h-full px-6"
+        class="flex flex-col items-center justify-between w-full h-full px-6 lg:flex-row"
       >
         <NuxtLink to="/">
           <img
@@ -17,16 +17,16 @@
             class="md:ml-16"
           />
         </NuxtLink>
-        <div>
+        <div class="flex flex-col gap-4 lg:flex-row">
           <NuxtLink
             to="/"
-            class="px-4 py-2 text-sm text-white rounded-full bg-biblioteca-blue custom-title-font"
+            class="w-full px-4 py-2 text-sm text-center text-white rounded-full bg-biblioteca-blue custom-title-font lg:w-fit"
           >
             Home
           </NuxtLink>
           <NuxtLink
             to="/cosa-e-stato-fatto"
-            class="px-4 py-2 ml-4 text-sm text-white rounded-full bg-biblioteca-purple custom-title-font"
+            class="w-full px-4 py-2 text-sm text-center text-white rounded-full bg-biblioteca-purple custom-title-font lg:w-fit"
           >
             Cosa è stato fatto
           </NuxtLink>
