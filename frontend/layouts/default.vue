@@ -70,7 +70,11 @@
               width="100"
             />
           </a>
-          <a :href="data.footer.ascoltoAttivo.href" target="_blank">
+          <a
+            v-if="route?.name === 'cosa-e-stato-fatto'"
+            :href="data.footer.ascoltoAttivo.href"
+            target="_blank"
+          >
             <img
               :src="data.footer.ascoltoAttivo.logo"
               :alt="data.footer.ascoltoAttivo.alt"
@@ -89,6 +93,7 @@
   const config = useRuntimeConfig();
 
   const url = config.public.environment;
+  const route = useRoute();
 </script>
 
 <style></style>
