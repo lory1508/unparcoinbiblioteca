@@ -8,10 +8,10 @@
     "
   >
     <div
-      class="fixed z-50 block bg-white border-2 rounded-md cursor-pointer bg-opacity-20 backdrop-blur-sm top-5 left-5 border-zinc-600 md:hidden"
+      class="fixed z-50 block border-2 rounded-md cursor-pointer bg-zinc-800 bg-opacity-20 backdrop-blur-sm top-5 left-5 border-zinc-400 md:hidden"
       @click="toggleMenu"
     >
-      <Icon icon="teenyicons:menu-solid" width="40" class="p-1" />
+      <Icon icon="teenyicons:menu-solid" width="40" class="p-1 text-zinc-400" />
     </div>
 
     <div
