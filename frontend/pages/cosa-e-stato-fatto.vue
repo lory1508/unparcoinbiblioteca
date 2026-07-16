@@ -2,7 +2,7 @@
   <Loader v-if="loading" :speed="5" text="Sto caricando..." />
   <div
     v-else
-    class="flex flex-col items-center justify-center gap-8 px-6 mt-16 md:px-32"
+    class="flex flex-col items-center justify-center gap-8 px-6 mt-24 md:mt-44 md:px-32"
   >
     <div
       class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"

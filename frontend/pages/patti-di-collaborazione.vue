@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-8 px-6 mt-16 grow md:px-32">
+  <div class="flex flex-col gap-8 px-6 mt-16 md:mt-44 grow md:px-32">
     <div class="flex flex-col items-center justify-center gap-2">
       <div
         class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"
