@@ -103,7 +103,7 @@
         v-for="(p, index) in data.principles.content"
         :key="`principle-${index}`"
         class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-80 w-80 size-fit custom-title-font hover:scale-105"
-        :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('${url}${p.img}');`"
+        :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('${url}/${p.img}');`"
       >
         <div class="w-64">
           {{ p.text }}
@@ -119,7 +119,7 @@
   <div class="flex flex-col w-full pt-8">
     <div
       class="w-full h-[500px]"
-      :style="`background-position: 35% 74%; background-size: auto; background-image: url('${url}${data.how_it_works.img}'); background-attachment: fixed;`"
+      :style="`background-position: 35% 74%; background-size: auto; background-image: url('${url}/${data.how_it_works.img}'); background-attachment: fixed;`"
     />
     <div
       class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red"
@@ -159,32 +159,6 @@
         <Arrow class="w-52 rotate-[30deg]" />
       </NuxtLink>
     </div>
-  </div>
-
-  <!-- External Links -->
-  <div
-    class="flex flex-col items-center justify-center w-full gap-8 mb-8 lg:flex-row"
-  >
-    <!-- <a :href="data.externalLinks.gallery.href" target="_blank">
-      <div
-        class="flex items-center justify-center text-2xl text-center text-white uppercase transition-all duration-300 rounded-full h-36 w-96 size-fit custom-title-font hover:scale-105"
-        :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url('${url}${data.externalLinks.gallery.img}');`"
-      >
-        <div class="w-64">
-          {{ data.externalLinks.gallery.text }}
-        </div>
-      </div>
-    </a> -->
-    <!-- <a :href="data.externalLinks.program.href" target="_blank">
-      <div
-        class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-36 w-96 size-fit custom-title-font hover:scale-105"
-        :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url('${url}${data.externalLinks.program.img}');`"
-      >
-        <div class="w-64">
-          {{ data.externalLinks.program.text }}
-        </div>
-      </div>
-    </a> -->
   </div>
 
   <!-- Join -->
@@ -233,12 +207,7 @@
   import data from "@/utils/data.json";
 
   const config = useRuntimeConfig();
-  const url = config.public.environment;
-  const principleBgs = ["green", "red", "blue", "purple"];
-
-  const principleBg = (index) => {
-    return principleBgs[index % principleBgs.length];
-  };
+  const url = useRequestURL().host;
 </script>
 
 <style>

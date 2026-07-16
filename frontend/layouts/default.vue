@@ -56,7 +56,7 @@
       >
         <NuxtLink to="/">
           <img
-            :src="`${url}images/Logo_Ascolto_Attivo_nera.png`"
+            :src="`${url}/images/Logo_Ascolto_Attivo_nera.png`"
             alt="Un Parco In Biblioteca - Logo"
             width="280"
             height="90"
@@ -148,9 +148,7 @@
   import data from "@/utils/data.json";
   import { Icon } from "@iconify/vue";
 
-  const config = useRuntimeConfig();
-
-  const url = config.public.environment;
+  const url = useRequestURL().host;
   const route = useRoute();
   const showMenu = ref(false);
   const scrolled = ref(false);
