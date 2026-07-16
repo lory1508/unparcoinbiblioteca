@@ -1,6 +1,11 @@
 <template>
   <div
-    class="flex flex-col w-full min-h-screen bg-gradient-to-br from-sky-50 to-sky-100"
+    class="flex flex-col w-full min-h-screen"
+    :class="
+      route?.name === 'patti-di-collaborazione'
+        ? 'bg-[#FBF5E9]'
+        : 'bg-gradient-to-br from-sky-50 to-sky-100'
+    "
   >
     <!-- Header -->
     <div class="flex flex-col items-center md:items-start">
@@ -29,6 +34,12 @@
             class="w-full px-4 py-2 text-sm text-center text-white rounded-full bg-biblioteca-purple custom-title-font lg:w-fit"
           >
             Cosa è stato fatto
+          </NuxtLink>
+          <NuxtLink
+            to="/patti-di-collaborazione"
+            class="w-full px-4 py-2 text-sm text-center text-white rounded-full bg-biblioteca-green custom-title-font lg:w-fit"
+          >
+            Patti di collaborazione
           </NuxtLink>
         </div>
       </div>
