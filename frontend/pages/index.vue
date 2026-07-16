@@ -1,7 +1,6 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <!-- <div :class="`h-screen bg-pink-400 bg-no-repeat bg-cover`" > -->
     <div
       :class="`h-screen`"
       style="
@@ -103,7 +102,7 @@
         v-for="(p, index) in data.principles.content"
         :key="`principle-${index}`"
         class="flex items-center justify-center text-xl text-center text-white uppercase transition-all duration-300 rounded-full h-80 w-80 size-fit custom-title-font hover:scale-105"
-        :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('${url}/${p.img}');`"
+        :style="`background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url(/${p.img});`"
       >
         <div class="w-64">
           {{ p.text }}
@@ -119,7 +118,7 @@
   <div class="flex flex-col w-full pt-8">
     <div
       class="w-full h-[500px]"
-      :style="`background-position: 35% 74%; background-size: auto; background-image: url('${url}/${data.how_it_works.img}'); background-attachment: fixed;`"
+      :style="`background-position: 35% 74%; background-size: auto; background-image: url(/${data.how_it_works.img}); background-attachment: fixed;`"
     />
     <div
       class="flex flex-col items-center justify-start gap-4 py-16 text-white bg-biblioteca-red"
@@ -207,6 +206,8 @@
   import data from "@/utils/data.json";
 
   const url = "http://" + useRequestURL().host;
+
+  console.log("URL:", url);
 </script>
 
 <style>

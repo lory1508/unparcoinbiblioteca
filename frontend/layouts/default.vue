@@ -56,7 +56,7 @@
       >
         <NuxtLink to="/">
           <img
-            :src="`${url}/images/Logo_Ascolto_Attivo_nera.png`"
+            src="/images/Logo_Ascolto_Attivo_nera.png"
             alt="Un Parco In Biblioteca - Logo"
             width="280"
             height="90"
