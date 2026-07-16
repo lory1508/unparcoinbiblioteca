@@ -12,7 +12,7 @@
       "
     >
       <div
-        class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black pt-80 bg-opacity-55"
+        class="flex flex-col items-center justify-center h-full gap-4 px-6 text-white bg-black md:pt-40 bg-opacity-55"
       >
         <div
           class="text-4xl font-bold tracking-tighter text-center uppercase md:text-6xl custom-title-font"
