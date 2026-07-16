@@ -148,7 +148,7 @@
   import data from "@/utils/data.json";
   import { Icon } from "@iconify/vue";
 
-  const url = useRequestURL().host;
+  const url = "http://" + useRequestURL().host;
   const route = useRoute();
   const showMenu = ref(false);
   const scrolled = ref(false);

@@ -206,8 +206,7 @@
   import Arrow from "~/components/Arrow.vue";
   import data from "@/utils/data.json";
 
-  const config = useRuntimeConfig();
-  const url = useRequestURL().host;
+  const url = "http://" + useRequestURL().host;
 </script>
 
 <style>
