@@ -93,7 +93,7 @@
 
   onMounted(async () => {
     data.dates.forEach(async (date) => {
-      date.photos = date.photos.map((photo) => `events/${date.path}/${photo}`);
+      date.photos = date.photos.map((photo) => `/events/${date.path}/${photo}`);
       await preloadImages(date.photos);
     });
     loading.value = false;

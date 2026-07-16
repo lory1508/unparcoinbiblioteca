@@ -206,8 +206,6 @@
   import data from "@/utils/data.json";
 
   const url = "http://" + useRequestURL().host;
-
-  console.log("URL:", url);
 </script>
 
 <style>
