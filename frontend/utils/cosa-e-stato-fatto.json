@@ -10,9 +10,13 @@
   "dates": [
     {
       "date": "26 Marzo",
-      "type": "LANCIO",
+      "type": "L'incontro di lancio",
       "color": "green",
       "path": "2025_03_26",
+      "description": [
+        "<strong>Il racconto visivo:</strong> Gli scatti dell'incontro che ha dato il via ufficiale al percorso di co-progettazione promosso dal Comune di Rivoli per ridisegnare il futuro del Parco Salvemini e della Biblioteca Alda Merini.",
+        "<strong>L'obiettivo:</strong> Coinvolgere attivamente i cittadini, raccogliere le prime idee e trasformare questi due importanti poli culturali in spazi sempre più accoglienti, dinamici e accessibili a tutte le generazioni."
+      ],
       "photos": [
         "DSC04852.jpeg",
         "DSC04854.jpeg",
@@ -43,9 +47,13 @@
     },
     {
       "date": "7-8-28-29 Aprile",
-      "type": "FORMAZIONE",
+      "type": "Incontri di formazione",
       "color": "red",
       "path": "2025_04_07-08-28-29",
+      "description": [
+        "<strong>Il racconto visivo:</strong> Le immagini delle due giornate dedicate all'approfondimento e alla riflessione condivisa sui principi della democrazia partecipativa.",
+        "<strong>I protagonisti:</strong> Cittadini, associazioni, amministratori, dipendenti pubblici e bibliotecari riuniti insieme in biblioteca per acquisire maggiore consapevolezza e strumenti utili a vivere il percorso da veri protagonisti."
+      ],
       "photos": [
         "DSC05295.jpeg",
         "DSC05298.jpeg",
@@ -64,9 +72,13 @@
     },
     {
       "date": "16 Aprile",
-      "type": "LABORATORIO VISIONING",
+      "type": "Laboratorio di Visioning",
       "color": "blue",
       "path": "2025_04_16",
+      "description": [
+        "<strong>Il racconto visivo:</strong> Gli scatti del laboratorio dedicato all'ascolto e all'immaginazione comune, una tappa cruciale per mettere al centro il dialogo con la cittadinanza e unire Parco Salvemini e Biblioteca Alda Merini in un unico sistema di relazione e cultura.",
+        "<strong>L'obiettivo:</strong> Esplorare i bisogni e far emergere le prime visioni sul futuro di questi spazi, avviando quel percorso concreto di partecipazione che ha permesso di raccogliere le idee da trasformare, successivamente, in proposte operative."
+      ],
       "photos": [
         "PHOTO-2025-04-16-22-24-03(1).jpg",
         "PHOTO-2025-04-16-22-24-03.jpg",
@@ -80,11 +92,15 @@
     },
     {
       "date": "5 Maggio",
-      "type": "APPROFONDIMENTO",
+      "type": "Spazi pubblici e beni comuni",
       "color": "purple",
       "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-parco-in-biblioteca-Approfondimento-con-Antonella-Agnoli-e-Daniela-Ciaffi",
       "background": "bg-pink-300",
       "path": "2025_05_05",
+      "description": [
+        "<strong>Il racconto visivo:</strong> I momenti salienti dell'incontro di approfondimento sul 'fare biblioteca oggi' e sulla cura condivisa dei beni comuni, svoltosi presso la Biblioteca Alda Merini di Corso Susa 130.",
+        "<strong>Gli ospiti:</strong> Il confronto ravvicinato tra la cittadinanza e le esperte Antonella Agnoli e Daniela Ciaffi (vicepresidente di Labsus), accompagnate dalle testimonianze di alcune tra le più innovative esperienze nazionali di spazi di comunità."
+      ],
       "photos": [
         "20250505_225859.jpeg",
         "DSC07398.jpeg",
@@ -125,11 +141,15 @@
     },
     {
       "date": "17 Maggio",
-      "type": "CHARRETTE",
+      "type": "Charrette partecipativa",
       "color": "yellow",
       "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-Parco-in-Biblioteca-Charrette",
       "background": "bg-amber-100",
       "path": "2025_05_17",
+      "description": [
+        "<strong>Il racconto visivo:</strong> Una giornata intensa di progettazione e confronto pubblico all'aria aperta presso il Parco Salvemini, animata dalle sonorizzazioni jazz manouche di Accordi Disaccordi.",
+        "<strong>I momenti chiave:</strong> I tavoli di lavoro della cittadinanza per definire le strategie di riqualificazione del parco e della biblioteca, la mostra tematica, le attività dedicate ai più piccoli e l'atteso incontro conclusivo con il divulgatore scientifico David Quammen a Villa Cane D'Ussol per il Salone Off."
+      ],
       "photos": [
         "DSC08998.jpeg",
         "DSC08999.jpeg",
@@ -180,11 +200,15 @@
     },
     {
       "date": "14 Giugno",
-      "type": "ACTION PLANNING",
+      "type": "Laboratorio di Action Planning",
       "color": "green",
       "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/Laboratorio-di-Action-Planning-C-e-un-Parco-in-Biblioteca",
       "background": "bg-green-100",
       "path": "2025_06_14",
+      "description": [
+        "<strong>Il racconto visivo:</strong> Le immagini del laboratorio pratico al Parco Salvemini per tradurre le idee in azioni concrete e programmare le attività dei prossimi mesi.",
+        "<strong>L'energia della giornata:</strong> Un'esperienza informale e conviviale tra tavoli di lavoro, pranzi al sacco e l'appuntamento speciale pomeridiano 'Tatami Erranti', dedicato a stimolare il protagonismo e la visione delle nuove generazioni."
+      ],
       "photos": [
         "14_giugno_2025_01.jpg",
         "14_giugno_2025_02.jpg",
@@ -195,11 +219,15 @@
     },
     {
       "date": "30 Giugno",
-      "type": "ESITI",
+      "type": "Restituzione finale e conclusioni",
       "color": "red",
       "href": "https://www.comune.rivoli.to.it/Vivere-il-comune/Eventi/C-e-un-Parco-in-Biblioteca-Esiti",
       "background": "bg-red-100",
       "path": "2025_06_30",
+      "description": [
+        "<strong>Il racconto visivo:</strong> La grande serata conclusiva che ha celebrato la fine del percorso di co-progettazione tra il Parco Salvemini e la Biblioteca Civica.",
+        "<strong>La restituzione:</strong> I momenti della presentazione dei report finali alla comunità, i saluti istituzionali e le emozionanti performance musicali del <i>Coro Senza Dimora</i> che hanno accompagnato i cittadini verso le future trasformazioni urbane."
+      ],
       "photos": [
         "DSC01758.jpeg",
         "DSC01759.jpeg",

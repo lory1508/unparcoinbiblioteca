@@ -11,12 +11,12 @@
     </div>
 
     <div
-      class="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-16"
+      class="flex flex-wrap items-start justify-center w-full gap-x-4 gap-y-16"
     >
       <div
         v-for="(date, index) in data.dates"
         :key="`when-${index}`"
-        class="items-center justify-center text-white rounded-xl w-fit"
+        class="items-center justify-center max-w-md text-white rounded-xl w-fit"
         :class="{
           'bg-biblioteca-blue': date.color === 'blue',
           'bg-biblioteca-green': date.color === 'green',
@@ -34,9 +34,24 @@
         <div
           class="flex flex-col justify-center w-full gap-4 px-4 py-2 text-center"
         >
-          <h1 class="text-4xl font-bold custom-title-font">{{ date.date }}</h1>
-          <div class="font-black text-center text-md text-nowrap">
-            {{ date.type }}
+          <div class="flex flex-col items-center gap-1 custom-title-font">
+            <div class="text-2xl font-black text-center">
+              {{ date.type }}
+            </div>
+            <div
+              class="w-full h-[2px] bg-white rounded-full bg-opacity-50 my-1"
+            />
+            <h1 class="text-xl font-bold">
+              {{ date.date }}
+            </h1>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div
+              v-for="(paragraph, pIndex) in date.description"
+              :key="`description-${pIndex}`"
+              class="text-base text-justify"
+              v-html="paragraph"
+            />
           </div>
         </div>
       </div>
@@ -77,10 +92,8 @@
   };
 
   onMounted(async () => {
-    console.log(url);
     data.dates.forEach(async (date) => {
       date.photos = date.photos.map((photo) => `events/${date.path}/${photo}`);
-      console.log(date.photos);
       await preloadImages(date.photos);
     });
     loading.value = false;
