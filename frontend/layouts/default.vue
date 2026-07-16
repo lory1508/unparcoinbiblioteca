@@ -7,6 +7,7 @@
         : 'bg-gradient-to-br from-sky-50 to-sky-100'
     "
   >
+    <!-- Mobile menu -->
     <div
       class="fixed z-50 block border-2 rounded-md cursor-pointer bg-zinc-800 bg-opacity-20 backdrop-blur-sm top-5 left-5 border-zinc-400 md:hidden"
       @click="toggleMenu"
@@ -43,9 +44,12 @@
         </div>
       </div>
     </div>
+    <!-- End mobile menu -->
+
     <!-- Header -->
     <div
       class="z-40 flex-col items-center hidden w-screen transition-all duration-300 shadow-lg md:flex md:fixed md:top-0 bg-zinc-600 backdrop-blur-sm bg-opacity-30 md:items-start"
+      :class="scrolled ? 'h-20' : 'h-36'"
     >
       <div
         class="flex flex-col items-center justify-between w-full h-full px-6 lg:flex-row"
@@ -59,7 +63,9 @@
             class="md:ml-16"
           />
         </NuxtLink>
-        <div class="flex flex-col gap-4 pt-6 lg:flex-row">
+        <div
+          class="flex flex-col items-center justify-center h-full gap-4 lg:flex-row"
+        >
           <NuxtLink
             to="/"
             class="w-full px-4 py-2 text-sm text-center text-white rounded-full bg-biblioteca-blue custom-title-font lg:w-fit"
@@ -147,6 +153,7 @@
   const url = config.public.environment;
   const route = useRoute();
   const showMenu = ref(false);
+  const scrolled = ref(false);
 
   const toggleMenu = () => {
     showMenu.value = !showMenu.value;
@@ -160,6 +167,7 @@
   );
 
   const handleScroll = () => {
+    scrolled.value = window.scrollY > 0;
     if (showMenu.value) {
       showMenu.value = false;
     }
