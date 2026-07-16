@@ -25,7 +25,12 @@
           'bg-biblioteca-purple': date.color === 'purple',
         }"
       >
-        <Carousel v-if="items" :items="items" mode="auto" class="max-w-md" />
+        <Carousel
+          v-if="date.photos.length > 0"
+          :items="date.photos"
+          mode="auto"
+          class="max-w-md"
+        />
         <div
           class="flex flex-col justify-center w-full gap-4 px-4 py-2 text-center"
         >
@@ -34,15 +39,6 @@
             {{ date.type }}
           </div>
         </div>
-        <!-- <Date
-          :date="date.date"
-          :time="date.time"
-          :type="date.type"
-          :color="date.color"
-          :up="Boolean(index % 2)"
-          :href="date?.href || ''"
-          :background="date?.background || ''"
-        /> -->
       </div>
     </div>
     <a :href="data.externalLinks.updates.href" target="_blank">
@@ -64,16 +60,8 @@
   import Carousel from "~/components/Carousel.vue";
   import Loader from "~/components/Loader.vue";
 
-  const items = [
-    "images/stock/fog.jpg",
-    "images/stock/rocks.jpg",
-    "images/stock/sea.jpg",
-    "images/stock/ship.jpg",
-    "images/stock/sunset.jpg",
-    "images/stock/trees.jpg",
-  ];
-
   const loading = ref(true);
+  const url = useRequestURL().host;
 
   const preloadImages = (paths) => {
     return Promise.all(
@@ -89,7 +77,12 @@
   };
 
   onMounted(async () => {
-    await preloadImages(items);
+    console.log(url);
+    data.dates.forEach(async (date) => {
+      date.photos = date.photos.map((photo) => `events/${date.path}/${photo}`);
+      console.log(date.photos);
+      await preloadImages(date.photos);
+    });
     loading.value = false;
   });
 </script>
