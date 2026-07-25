@@ -9,7 +9,7 @@
   >
     <!-- Mobile menu -->
     <div
-      class="fixed bottom-0 z-50 self-center block w-10/12 transition-all duration-500 md:hidden"
+      class="fixed bottom-0 z-50 self-center block w-10/12 transition-all duration-500 h-fit md:hidden"
       :class="showMenu ? '-translate-y-0' : 'translate-y-48'"
     >
       <div class="flex justify-end w-full px-4">
@@ -18,11 +18,10 @@
           @click="toggleMenu"
         >
           <Icon
-            icon="teenyicons:bookmark-solid"
-            height="72"
-            class="rotate-180 opacity-50 text-zinc-200"
+            icon="solar:hamburger-menu-bold"
+            height="56"
+            class="rotate-180 opacity-90 text-stone-600"
           />
-          <span class="z-40 -mt-10 text-zinc-200">menu</span>
         </div>
       </div>
       <div class="flex-col w-full h-fit md:hidden">
@@ -57,7 +56,7 @@
     <!-- Header -->
     <div
       class="z-40 flex-col items-center hidden w-screen transition-all duration-300 shadow-lg md:flex md:fixed md:top-0 bg-zinc-600 backdrop-blur-sm bg-opacity-30 md:items-start"
-      :class="scrolled ? 'h-20' : 'h-36'"
+      :class="scrolled ? 'md:h-20' : 'md:h-36'"
     >
       <div
         class="flex flex-col items-center justify-between w-full h-full px-6 lg:flex-row"

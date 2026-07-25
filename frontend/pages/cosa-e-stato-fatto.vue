@@ -2,7 +2,7 @@
   <Loader v-if="loading" :speed="5" text="Sto caricando..." />
   <div
     v-else
-    class="flex flex-col items-center justify-center gap-8 px-6 mt-24 md:mt-44 md:px-32"
+    class="flex flex-col items-center justify-center gap-8 px-6 pt-8 md:pt-44 md:px-32"
   >
     <div
       class="text-2xl tracking-tighter uppercase md:text-4xl custom-title-font"
@@ -58,7 +58,7 @@
     </div>
     <a :href="data.externalLinks.updates.href" target="_blank">
       <div
-        class="flex items-center justify-center h-40 text-xl text-center text-white uppercase transition-all duration-300 scale-110 rounded-full w-[420px] size-fit custom-title-font hover:scale-125"
+        class="flex items-center justify-center w-full h-40 text-sm text-center text-white uppercase transition-all duration-300 scale-110 rounded-full size-fit custom-title-font hover:scale-125"
         :style="`background-position: center; background-size: contain; background-repeat: no-repeat; background-image: url(/${data.externalLinks.updates.img});`"
       >
         <div class="w-64">
