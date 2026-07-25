@@ -93,6 +93,9 @@
 
   onMounted(async () => {
     data.dates.forEach(async (date) => {
+      if (date.photos.every((photo) => photo.startsWith("/events"))) {
+        return; // Skip if all photos are already absolute URLs
+      }
       date.photos = date.photos.map((photo) => `/events/${date.path}/${photo}`);
       await preloadImages(date.photos);
     });
