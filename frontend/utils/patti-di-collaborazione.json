@@ -11,5 +11,22 @@
       "Info su <strong><a href='https://www.comune.rivoli.to.it/pattidicollaborazione' target='_blank'>www.comune.rivoli.to.it/pattidicollaborazione</a></strong>"
     ],
     "image": "images/patti_di_collaborazione.jpg"
-  }
+  },
+  "patti": [
+    {
+      "title": "Primo Patto di Collaborazione al Parco Salvemini",
+      "content": [
+        "Il percorso di partecipazione “C’è un parco in biblioteca” segna un traguardo fondamentale: è stata ufficialmente avviata la procedura per la firma del primo Patto di Collaborazione dedicato alla cura, all’animazione e al presidio sociale del Parco Salvemini.",
+        "A proporre questa alleanza per la tutela dei beni comuni è stata la cabina di regia del progetto, una squadra che unisce cittadini attivi, associazioni locali e realtà economiche del territorio con l'obiettivo di valorizzare quest'area verde come spazio aperto e inclusivo. In coerenza con il Regolamento comunale sulla gestione condivisa dei beni e servizi (Del. C.C. n. 55/2026), l'iniziativa darà vita a un ricco programma di attività del tutto prive di scopo di lucro.",
+        "<strong>Il progetto integrato include:</strong><ul style='list-style-type: disc; list-style-position: inside;'><li>interventi di cura ordinaria e piccole manutenzioni dell’area verde</li><li>laboratori per bambini e famiglie</li><li>iniziative culturali, ludiche e sportive del tutto prive di scopo di lucro</li></ul>",
+        "Per sostenere questo percorso e garantire al tempo stesso una presenza costante contro il degrado, è stata inoltre avanzata la richiesta per la concessione temporanea del chiosco del parco, attualmente inutilizzato, trasformandolo in un vero presidio di comunità (ai sensi dell’Art. 54 del Regolamento).",
+        "Siamo davvero felici di accompagnare questo percorso: la cura della nostra città passa prima di tutto attraverso la partecipazione attiva e l'energia di chi vive i quartieri ogni giorno. "
+      ],
+      "images": [
+        "patti/parcoSalvemini/PDC_Rivoli1.jpg",
+        "patti/parcoSalvemini/PDC_Rivoli2.jpg",
+        "patti/parcoSalvemini/PDC_Rivoli3.jpg"
+      ]
+    }
+  ]
 }

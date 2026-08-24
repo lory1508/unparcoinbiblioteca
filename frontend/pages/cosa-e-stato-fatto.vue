@@ -76,7 +76,6 @@
   import Loader from "~/components/Loader.vue";
 
   const loading = ref(true);
-  const url = "http://" + useRequestURL().host;
 
   const preloadImages = (paths) => {
     return Promise.all(
