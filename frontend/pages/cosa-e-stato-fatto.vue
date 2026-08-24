@@ -91,13 +91,21 @@
   };
 
   onMounted(async () => {
-    data.dates.forEach(async (date) => {
-      if (date.photos.every((photo) => photo.startsWith("/events"))) {
-        return; // Skip if all photos are already absolute URLs
-      }
-      date.photos = date.photos.map((photo) => `/events/${date.path}/${photo}`);
-      await preloadImages(date.photos);
-    });
-    loading.value = false;
+    try {
+      loading.value = true;
+      data.dates.forEach(async (date) => {
+        if (date.photos.every((photo) => photo.startsWith("/events"))) {
+          return; // Skip if all photos are already absolute URLs
+        }
+        date.photos = date.photos.map(
+          (photo) => `/events/${date.path}/${photo}`,
+        );
+        await preloadImages(date.photos);
+      });
+    } catch (error) {
+      console.error("Errore durante il caricamento delle immagini:", error);
+    } finally {
+      loading.value = false;
+    }
   });
 </script>
