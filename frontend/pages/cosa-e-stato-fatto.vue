@@ -72,6 +72,7 @@
 
 <script setup>
   import data from "@/utils/cosa-e-stato-fatto.json";
+
   import Carousel from "~/components/Carousel.vue";
   import Loader from "~/components/Loader.vue";
 
@@ -79,29 +80,37 @@
 
   const preloadImages = (paths) => {
     return Promise.all(
-      paths.map((src) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = resolve;
-          img.onerror = resolve; // non bloccare tutto se una fallisce
-        });
-      }),
+      paths.map(
+        (src) =>
+          new Promise((resolve) => {
+            const img = new Image();
+
+            img.onload = resolve;
+            img.onerror = resolve; // Non bloccare tutto se un'immagine fallisce
+
+            img.src = src;
+          }),
+      ),
     );
   };
 
   onMounted(async () => {
     try {
       loading.value = true;
-      data.dates.forEach(async (date) => {
-        if (date.photos.every((photo) => photo.startsWith("/events"))) {
-          return; // Skip if all photos are already absolute URLs
-        }
-        date.photos = date.photos.map(
-          (photo) => `/events/${date.path}/${photo}`,
-        );
-        await preloadImages(date.photos);
-      });
+
+      await Promise.all(
+        data.dates.map(async (date) => {
+          // Se i path non sono ancora completi, li costruiamo
+          if (!date.photos.every((photo) => photo.startsWith("/events"))) {
+            date.photos = date.photos.map(
+              (photo) => `/events/${date.path}/${photo}`,
+            );
+          }
+
+          // Aspetta che TUTTE le immagini di questa data siano caricate
+          await preloadImages(date.photos);
+        }),
+      );
     } catch (error) {
       console.error("Errore durante il caricamento delle immagini:", error);
     } finally {
